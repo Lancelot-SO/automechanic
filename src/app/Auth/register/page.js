@@ -1,7 +1,7 @@
 import React from "react";
 
-function page() {
+function RegisterPage() {
   return <div>page</div>;
 }
 
-export default page;
+export default RegisterPage;
