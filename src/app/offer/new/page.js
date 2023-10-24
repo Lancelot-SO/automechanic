@@ -4,4 +4,4 @@ function AddOfferPage() {
   return <div>AddOfferPage</div>;
 }
 
-export default paAddOfferPage;
+export default AddOfferPage;
