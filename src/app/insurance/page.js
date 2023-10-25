@@ -1,4 +1,4 @@
-import React from "reaInsurancePt";
+import React from "react";
 
 function InsurancePage() {
   return <div>InsurancePage</div>;

@@ -1,12 +1,54 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   UserIcon,
   PowerIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 import { FaCarSide, FaMotorcycle, FaTruck, FaGears } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
+import { usePathname, useRouter } from "next/navigation";
 function NavBar() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [iconColor, setIconColor] = useState({
+    car: "text-[#F88220]",
+    bike: "text-[#989898]",
+    truck: "text-[#989898]",
+    part: "text-[#989898]",
+  });
+  useEffect(() => {
+    if (pathname === "/product/car")
+      setIconColor({
+        car: "text-[#F88220]",
+        bike: "text-[#989898]",
+        truck: "text-[#989898]",
+        part: "text-[#989898]",
+      });
+    else if (pathname === "/product/bike") {
+      setIconColor({
+        car: "text-[#989898]",
+        bike: "text-[#F88220]",
+        truck: "text-[#989898]",
+        part: "text-[#989898]",
+      });
+    } else if (pathname === "/product/truck") {
+      setIconColor({
+        car: "text-[#989898]",
+        bike: "text-[#989898]",
+        truck: "text-[#F88220]",
+        part: "text-[#989898]",
+      });
+    } else if (pathname === "/product/part") {
+      setIconColor({
+        car: "text-[#989898]",
+        bike: "text-[#989898]",
+        truck: "text-[#989898]",
+        part: "text-[#F88220]",
+      });
+    }
+  }, [pathname]);
   return (
     <header>
       <div className='w-full flex flex-col'>
@@ -14,7 +56,7 @@ function NavBar() {
         <div className='w-full flex flex-row py-4 px-20  bg-[#414141] text-white justify-between'>
           <div className='flex flex-row divide-x-2 divide-solid divide-[#575757] place-items-center'>
             <h1 className='text-4xl uppercase pr-5 '>
-              <a href='/'>Automarket</a>
+              <Link href='/'>Automarket</Link>
             </h1>
             <p className='text-[#A5A2A5] uppercase text-md  pl-5'>
               This is a title
@@ -23,19 +65,27 @@ function NavBar() {
           <div className='flex flex-row place-items-center '>
             <UserIcon className='h-6 w-6 text-[#F88220] pr-1' />
             <div className='flex flex-row divide-x-2 divide-solid divide-[#575757] '>
-              <a className='text-[#B4BCBC] text-base font-bold pr-4' href='#'>
+              <Link
+                className='text-[#B4BCBC] text-base font-bold pr-4'
+                href='/dealer'
+              >
                 Dealer Name
-              </a>
+              </Link>
               <div className='px-4'>
                 <PowerIcon className='h-6 w-6 text-[#838994] font-bold' />
               </div>
-              <a className='pl-4 text-[#BCBCBC]' href='#'>
+              <Link className='pl-4 text-[#BCBCBC]' href='/auth/login'>
                 Sign Out
-              </a>
+              </Link>
             </div>
           </div>
           <div className='flex flex-row place-items-center pr-20'>
-            <button className='bg-[#4D4D4D] hover:bg-[#595959] text-white font-bold py-2 px-4 rounded uppercase mr-6'>
+            <button
+              className='bg-[#4D4D4D] hover:bg-[#595959] text-white font-bold py-2 px-4 rounded uppercase mr-6'
+              onClick={() => {
+                router.push("/offer/new");
+              }}
+            >
               + add an offer
             </button>
             <div>
@@ -43,112 +93,112 @@ function NavBar() {
                 <button className='bg-[#4D4D4D] hover:bg-[#595959] text-white font-bold py-2 px-4 rounded uppercase mr-6'>
                   <span className='mr-1'>Pages</span>
                 </button>
-                <ul className='absolute hidden text-[#BCBCBC] pt-1 group-hover/main:block w-24 ml-[-94px]  divide-y-2 divide-solid divide-[#575757]'>
+                <ul className='absolute hidden text-[#BCBCBC] pt-1 group-hover/main:block w-24 ml-[-94px]  divide-y-2 divide-solid divide-[#575757]  z-10'>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/'
                     >
                       Home Page
-                    </a>
+                    </Link>
                   </li>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/offer/new'
                     >
                       Add an Offer
-                    </a>
+                    </Link>
                   </li>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/auth/login'
                     >
                       Login page
-                    </a>
+                    </Link>
                   </li>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/product/car'
                     >
                       Car list
-                    </a>
+                    </Link>
                     <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
                     <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[128px] group-hover/item:block top-0 left-[180px]'>
                       <li>
-                        <a
+                        <Link
                           className='rounded-t py-2  flex flex-col w-full'
-                          href='#'
+                          href='/product/car'
                         >
                           Car Detail
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/blog'
                     >
                       Blog
-                    </a>
+                    </Link>
                     <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
 
                     <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[168px] group-hover/item:block top-0 left-[180px]'>
                       <li>
-                        <a
+                        <Link
                           className='rounded-t py-2  flex flex-col w-full'
-                          href='#'
+                          href='/blog'
                         >
                           Blog post
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/dealer'
                     >
                       Dealer list
-                    </a>
+                    </Link>
                     <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
                     <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[210px] group-hover/item:block top-0 left-[180px]'>
                       <li>
-                        <a
+                        <Link
                           className='rounded-t py-2  flex flex-col w-full '
-                          href='#'
+                          href='/dealer'
                         >
                           Dealer Detail
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/insurance'
                     >
                       Insurance
-                    </a>
+                    </Link>
                   </li>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/under_construction'
                     >
                       Under construction
-                    </a>
+                    </Link>
                   </li>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <a
+                    <Link
                       className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='#'
+                      href='/contact'
                     >
                       contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -162,28 +212,32 @@ function NavBar() {
             <nav>
               <ul className='flex flex-row divide-x-2 divide-solid divide-[#DEDFDE]'>
                 <li className='pr-4'>
-                  <a href=''>
-                    <FaCarSide className='text-4xl text-[#F88220]' />
+                  <Link href='/product/car'>
+                    <FaCarSide className={`text-4xl ${iconColor.car}`} />
                     <span className='uppercase font-semibold'>Cars</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className='px-4'>
-                  <a href=''>
-                    <FaMotorcycle className='text-4xl text-[#989898] hover:text-[#F88220]' />
+                  <Link href='/product/bike'>
+                    <FaMotorcycle
+                      className={`text-4xl ${iconColor.bike} hover:text-[#F88220]`}
+                    />
                     <span className='uppercase font-semibold'>Bikes</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className='px-4'>
-                  <a href=''>
-                    <FaTruck className='text-4xl text-[#989898] hover:text-[#F88220]' />
+                  <Link href='/product/truck'>
+                    <FaTruck
+                      className={`text-4xl ${iconColor.truck} hover:text-[#F88220]`}
+                    />
                     <span className='uppercase font-semibold'>Trucks</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className='px-4'>
-                  <a href=''>
+                  <Link href='/product/part'>
                     <FaGears className='text-4xl text-[#989898] hover:text-[#F88220]' />
                     <span className='uppercase font-semibold'>Parts</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className='pr-12'>
                   <hr className='divide-x-2 divide-solid divide-[#DEDFDE] rotate-90' />
@@ -197,15 +251,19 @@ function NavBar() {
             method='post'
             className='flex flex-row pr-24 place-items-center grow'
           >
-            <input
-              type='text'
-              name='quick_search'
-              placeholder='Quick Search, Ex: Mercedes-Benz E220'
-              className='block grow-[1]  focus:outline-none py-1.5 pl-7 border-0 mr-4 drop-shadow-md h-12 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-grey-400 '
-            />
+            <div className='flex flex-row grow drop-shadow-md h-10 '>
+              <input
+                type='text'
+                name='quick_search'
+                placeholder='Quick Search, Ex: Mercedes-Benz E220'
+                className='block grow-[1]  focus:outline-none py-1.5 pl-7 border-0 mr-4 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-grey-400 '
+              />
 
-            <div className=''>
-              <select name='type-option' id=''>
+              <select
+                name='type-option'
+                id=''
+                className='w-24 px-2  mr-2 drop-shadow-md rounded-md border-0 focus:outline-none  ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-grey-400'
+              >
                 <option value='cars' defaultValue='cars'>
                   Cars
                 </option>
@@ -213,9 +271,13 @@ function NavBar() {
                 <option value='trucks'>Trucks</option>
                 <option value='parts'>Parts</option>
               </select>
-            </div>
-            <div>
-              <input type='submit' placeholder='search' />
+
+              <button
+                type='submit'
+                className='flex items-center w-24 mr-2 p-2 h-10 self-center bg-[#F88220] text-white rounded-md uppercase drop-shadow-md'
+              >
+                <FaSearch className='mr-1' /> Search
+              </button>
             </div>
           </form>
         </div>
