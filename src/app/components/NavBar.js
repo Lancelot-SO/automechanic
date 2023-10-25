@@ -157,7 +157,7 @@ function NavBar() {
         </div>
 
         {/*  header two */}
-        <div className='w-full flex flex-row py-4 px-20  bg-white justify-between shadow-md'>
+        <div className='w-full flex flex-row py-4 px-20  bg-white shadow-md'>
           <div>
             <nav>
               <ul className='flex flex-row divide-x-2 divide-solid divide-[#DEDFDE]'>
@@ -185,18 +185,26 @@ function NavBar() {
                     <span className='uppercase font-semibold'>Parts</span>
                   </a>
                 </li>
+                <li className='pr-12'>
+                  <hr className='divide-x-2 divide-solid divide-[#DEDFDE] rotate-90' />
+                </li>
               </ul>
             </nav>
           </div>
-          <div></div>
-          <form action='' method='post' className='flex flex-row'>
+
+          <form
+            action=''
+            method='post'
+            className='flex flex-row pr-24 place-items-center grow'
+          >
             <input
               type='text'
               name='quick_search'
               placeholder='Quick Search, Ex: Mercedes-Benz E220'
+              className='block grow-[1]  focus:outline-none py-1.5 pl-7 border-0 mr-4 drop-shadow-md h-12 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-grey-400 '
             />
-            <div>
-              <span>Cars</span>
+
+            <div className=''>
               <select name='type-option' id=''>
                 <option value='cars' defaultValue='cars'>
                   Cars
