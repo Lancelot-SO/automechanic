@@ -5,11 +5,13 @@ import {
   PowerIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/solid";
+import { FaCarSide, FaMotorcycle, FaTruck, FaGears } from "react-icons/fa6";
 function NavBar() {
   return (
     <header>
       <div className='w-full flex flex-col'>
-        <div className='w-full flex flex-row py-4 px-20  bg-[#414141] text-white justify-between '>
+        {/*  header one */}
+        <div className='w-full flex flex-row py-4 px-20  bg-[#414141] text-white justify-between'>
           <div className='flex flex-row divide-x-2 divide-solid divide-[#575757] place-items-center'>
             <h1 className='text-4xl uppercase pr-5 '>
               <a href='/'>Automarket</a>
@@ -153,24 +155,41 @@ function NavBar() {
             </div>
           </div>
         </div>
-        <div className='w-full fle flex-row'>
-          <nav>
-            <ul>
-              <li>
-                <a href=''>Cars</a>
-              </li>
-              <li>
-                <a href=''>Bikes</a>
-              </li>
-              <li>
-                <a href=''>Trucks</a>
-              </li>
-              <li>
-                <a href=''>Parts</a>
-              </li>
-            </ul>
-          </nav>
-          <form action='' method='post'>
+
+        {/*  header two */}
+        <div className='w-full flex flex-row py-4 px-20  bg-white justify-between shadow-md'>
+          <div>
+            <nav>
+              <ul className='flex flex-row divide-x-2 divide-solid divide-[#DEDFDE]'>
+                <li className='pr-4'>
+                  <a href=''>
+                    <FaCarSide className='text-4xl text-[#F88220]' />
+                    <span className='uppercase font-semibold'>Cars</span>
+                  </a>
+                </li>
+                <li className='px-4'>
+                  <a href=''>
+                    <FaMotorcycle className='text-4xl text-[#989898] hover:text-[#F88220]' />
+                    <span className='uppercase font-semibold'>Bikes</span>
+                  </a>
+                </li>
+                <li className='px-4'>
+                  <a href=''>
+                    <FaTruck className='text-4xl text-[#989898] hover:text-[#F88220]' />
+                    <span className='uppercase font-semibold'>Trucks</span>
+                  </a>
+                </li>
+                <li className='px-4'>
+                  <a href=''>
+                    <FaGears className='text-4xl text-[#989898] hover:text-[#F88220]' />
+                    <span className='uppercase font-semibold'>Parts</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div></div>
+          <form action='' method='post' className='flex flex-row'>
             <input
               type='text'
               name='quick_search'
