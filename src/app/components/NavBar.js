@@ -1,6 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { UserIcon, PowerIcon } from "@heroicons/react/24/solid";
+import {
+  UserIcon,
+  PowerIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/24/solid";
 function NavBar() {
   return (
     <header>
@@ -37,7 +41,7 @@ function NavBar() {
                 <button className='bg-[#4D4D4D] hover:bg-[#595959] text-white font-bold py-2 px-4 rounded uppercase mr-6'>
                   <span className='mr-1'>Pages</span>
                 </button>
-                <ul className='absolute hidden text-[#BCBCBC] pt-1 group-hover/main:block w-24 ml-[-94px] '>
+                <ul className='absolute hidden text-[#BCBCBC] pt-1 group-hover/main:block w-24 ml-[-94px]  divide-y-2 divide-solid divide-[#575757]'>
                   <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
                     <a
                       className='rounded-t py-2 px-2 flex flex-col w-full'
@@ -62,17 +66,18 @@ function NavBar() {
                       Login page
                     </a>
                   </li>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
+                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
                     <a
                       className='rounded-t py-2 px-2 flex flex-col w-full'
                       href='#'
                     >
                       Car list
                     </a>
-                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[130px] group-hover/item:block top-0 left-[180px]'>
+                    <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
+                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[128px] group-hover/item:block top-0 left-[180px]'>
                       <li>
                         <a
-                          className='rounded-t py-1  flex flex-col w-full'
+                          className='rounded-t py-2  flex flex-col w-full'
                           href='#'
                         >
                           Car Detail
@@ -80,17 +85,19 @@ function NavBar() {
                       </li>
                     </ul>
                   </li>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
+                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
                     <a
                       className='rounded-t py-2 px-2 flex flex-col w-full'
                       href='#'
                     >
                       Blog
                     </a>
-                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[170px] group-hover/item:block top-0 left-[180px]'>
+                    <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
+
+                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[168px] group-hover/item:block top-0 left-[180px]'>
                       <li>
                         <a
-                          className='rounded-t py-1  flex flex-col w-full'
+                          className='rounded-t py-2  flex flex-col w-full'
                           href='#'
                         >
                           Blog post
@@ -98,17 +105,18 @@ function NavBar() {
                       </li>
                     </ul>
                   </li>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
+                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
                     <a
                       className='rounded-t py-2 px-2 flex flex-col w-full'
                       href='#'
                     >
                       Dealer list
                     </a>
-                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[200px] group-hover/item:block top-0 left-[180px]'>
+                    <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
+                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[210px] group-hover/item:block top-0 left-[180px]'>
                       <li>
                         <a
-                          className='rounded-t py-1  flex flex-col w-full '
+                          className='rounded-t py-2  flex flex-col w-full '
                           href='#'
                         >
                           Dealer Detail
