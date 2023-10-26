@@ -1,7 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { FaFacebook, FaTwitter, FaGoogle } from "react-icons/fa6";
 
 function Footer() {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  useEffect(() => {
+    // Update the current year when the component mounts
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className='w-full flex flex-col'>
       {/* layer one */}
@@ -124,10 +131,10 @@ function Footer() {
         </div>
       </div>
       {/* layer two */}
-      <div>
-        <div>
-          <p>© 2012 Automarket. All Rights Reserved</p>
-          <div>
+      <div className='w-full flex flex-row px-20 bg-[#414141] text-[#BCBCA0]'>
+        <div className='w-full flex flex-row justify-between py-2 text-sm  pr-20'>
+          <p>&copy; {currentYear} Automarket. All Rights Reserved</p>
+          <div className='flex flex-row justify-start'>
             <p>Webdesign by</p>
             <a href=''>Automarket</a>
           </div>
