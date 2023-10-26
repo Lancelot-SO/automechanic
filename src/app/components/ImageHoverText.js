@@ -10,7 +10,7 @@ function ImageHoverText() {
             src='/images/mercedes_picture.jpg'
           />
         </div>
-        <div className='relative h-[120px]'>
+        <div className='relative h-auto'>
           <div className=''>
             {/* Hidden content */}
             <div
@@ -22,7 +22,7 @@ function ImageHoverText() {
                rounded-t-md
               '
             >
-              <div className='flex flex-col w-full text-xs h-[120px] py-4 px-2 text-[#B7B8B8] space-y-2'>
+              <div className='flex flex-col w-full text-xs h-auto py-4 px-2 text-[#B7B8B8] space-y-2'>
                 <p className=' '>Registration 2002</p>
                 <p className=' '>3.0 Diesel</p>
                 <p className=' '>Body Coupe</p>

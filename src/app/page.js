@@ -8,19 +8,19 @@ export default function Home() {
     <main className='flex min-h-screen flex-col items-center justify-between px-20 py-6 bg-[#F7F3F7]'>
       {/* section one */}
       <section className='w-full flex flex-row'>
-        <div className='flex flex-col w-3/4'>
+        <div className='flex flex-col w-[70%]'>
           <div>
-            <h3 className='text-2xl'>
+            <h3 className='text-2xl pb-4'>
               <strong>Best </strong>Offer
             </h3>
           </div>
-          <div className='flex fle-col pr-4'>
+          <div className='flex fle-col pr-3'>
             <Carousel />
           </div>
         </div>
-        <div className='flex flex-col w-1/6 ml-6'>
+        <div className='flex flex-col w-[20%] ml-4'>
           <div className='flex flex-row justify-between'>
-            <h3 className='text-2xl '>
+            <h3 className='text-2xl pb-2'>
               <strong>Latest</strong> offers
             </h3>
             <div className='flex flex-row'>
@@ -29,11 +29,11 @@ export default function Home() {
             </div>
           </div>
           <ul>
-            <li>
-              <ImageHoverText />
-            </li>
-            <li>b</li>
-            <li>c</li>
+            {[...Array(3)].map((_, i) => (
+              <li key={i}>
+                <ImageHoverText />
+              </li>
+            ))}
           </ul>
         </div>
       </section>
