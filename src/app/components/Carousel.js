@@ -3,13 +3,11 @@ import React, { useRef } from "react";
 
 function Carousel() {
   const sliderRef = useRef(null);
-  const totalSlides = 2; // Adjust this number based on the total number of slides.
 
   const leftClickHandler = () => {
     if (sliderRef.current) {
       sliderRef.current.style.scrollBehavior = "smooth";
       if (sliderRef.current.scrollLeft === 0) {
-        // If at the first slide, jump to the last slide
         sliderRef.current.scrollLeft =
           sliderRef.current.scrollWidth - sliderRef.current.offsetWidth;
       } else {
@@ -25,7 +23,6 @@ function Carousel() {
         sliderRef.current.scrollLeft >=
         sliderRef.current.scrollWidth - sliderRef.current.offsetWidth
       ) {
-        // If at the last slide, jump to the first slide
         sliderRef.current.scrollLeft = 0;
       } else {
         sliderRef.current.scrollLeft += sliderRef.current.offsetWidth;
