@@ -1,11 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { FaFacebook, FaTwitter, FaGoogle } from "react-icons/fa6";
-
+import Link from "next/link";
 function Footer() {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
   useEffect(() => {
-    // Update the current year when the component mounts
     setCurrentYear(new Date().getFullYear());
   }, []);
 
@@ -16,89 +15,89 @@ function Footer() {
         <nav className='w-2/3 '>
           <ul className='flex flex-row justify-between mr-20'>
             <li className=''>
-              <a href='#'>
+              <Link href='/dealer'>
                 <div className='mb-6 text-xl'>
                   <strong>About</strong> us
                 </div>
-              </a>
+              </Link>
               <ul className='text-xs space-y-2'>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='/' className='hover:text-[#F88220]'>
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='/' className='hover:text-[#F88220]'>
                     Our Partners
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='/' className='hover:text-[#F88220]'>
                     Advertising Online
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='/' className='hover:text-[#F88220]'>
                     Site Map
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href=''>
+              <Link href='/'>
                 <div className='mb-6 text-xl'>
                   <strong>Need</strong> Help?
                 </div>
-              </a>
+              </Link>
               <ul className='text-xs space-y-2'>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='/' className='hover:text-[#F88220]'>
                     How do i add an offer?
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='/' className='hover:text-[#F88220]'>
                     How do I find a vehicle
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='/' className='hover:text-[#F88220]'>
                     Price list
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='/' className='hover:text-[#F88220]'>
                     Office for car dealers
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href=''>
+              <Link href='/'>
                 <div className='mb-6 text-xl'>
                   <strong>User </strong>area
                 </div>
-              </a>
+              </Link>
               <ul className='text-xs space-y-2'>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='' className='hover:text-[#F88220]'>
                     Add an offer
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='' className='hover:text-[#F88220]'>
                     Register dealer
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='' className='hover:text-[#F88220]'>
                     Login Dealer
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='' className='hover:text-[#F88220]'>
+                  <Link href='' className='hover:text-[#F88220]'>
                     News
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -110,19 +109,19 @@ function Footer() {
           </h3>
           <ul className='flex flex-row space-x-10'>
             <li className='bg-white w-14 h-14 flex flex-row items-center justify-center shadow-md rounded-md'>
-              <a href=''>
+              <Link href='/'>
                 <FaFacebook className='text-4xl  text-[#6D6E71] hover:text-[#F88220]' />
-              </a>
+              </Link>
             </li>
             <li className='bg-white w-14 h-14 flex flex-row items-center justify-center shadow-md rounded-md'>
-              <a href=''>
+              <Link href=''>
                 <FaTwitter className='text-4xl  text-[#6D6E71] hover:text-[#F88220]' />
-              </a>
+              </Link>
             </li>
             <li className='bg-white w-14 h-14 flex flex-row items-center justify-center shadow-md rounded-md'>
-              <a href=''>
+              <Link href=''>
                 <FaGoogle className='text-4xl  text-[#6D6E71] hover:text-[#F88220]' />
-              </a>
+              </Link>
             </li>
           </ul>
           <p className='text-xs pt-4'>
@@ -136,7 +135,7 @@ function Footer() {
           <p>&copy; {currentYear} Automarket. All Rights Reserved</p>
           <div className='flex flex-row justify-start'>
             <p>Webdesign by</p>
-            <a href=''>Automarket</a>
+            <Link href=''>Automarket</Link>
           </div>
         </div>
       </div>
