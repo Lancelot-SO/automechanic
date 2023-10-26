@@ -2,7 +2,8 @@ import Image from "next/image";
 import Carousel from "./components/Carousel";
 import { BiSolidCaretDownSquare, BiSolidCaretUpSquare } from "react-icons/bi";
 import ImageHoverText from "./components/ImageHoverText";
-import { FaSearch, FaDollarSign } from "react-icons/fa";
+import { FaSearch, FaDollarSign, FaLongArrowAltRight } from "react-icons/fa";
+import { BsFillCircleFill } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -83,12 +84,123 @@ export default function Home() {
             sell+
           </a>
         </div>
-        <div>
-          <hr />
-        </div>
       </section>
       {/* section three */}
-      <section>section three </section>
+      <div>
+        <hr className='w-full' />
+      </div>
+      <section className='w-full flex flew-row bg-white px-20 py-6 justify-stretch'>
+        <div className='flex flex-col space-y-2 w-1/3 mr-4'>
+          <h3 className='text-xl pb-2'>
+            <strong>Popular</strong> Articles
+          </h3>
+          <ul className='flex flex-col space-y-2'>
+            <li className='flex flex-row space-x-3'>
+              <img src='/images/icon.gif' alt='icon' />
+              <div>
+                <p className='text-sm font-bold'>
+                  Here are many variations of passages of Lorem Ipsum..
+                </p>
+                <a className='text-xs hover:text-[#F88220]' href=''>
+                  Read more
+                  <FaLongArrowAltRight className='inline-block w-4 h-4 pl-1 text-[#F88220]' />
+                </a>
+              </div>
+            </li>
+            <li className='flex flex-row space-x-3'>
+              <img src='/images/icon.gif' alt='icon' />
+              <div>
+                <p className='text-sm font-bold'>
+                  Here are many variations of passages of Lorem Ipsum..
+                </p>
+                <a className='text-xs hover:text-[#F88220]' href=''>
+                  Read more
+                  <FaLongArrowAltRight className='inline-block w-4 h-4 pl-1 text-[#F88220]' />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className='flex flex-col space-y-2 w-1/3'>
+          <div className='text-xl pb-2 flex flex-row space-x-16'>
+            <h3>
+              <strong>Car </strong>dealers
+            </h3>
+            <a className='text-sm hover:text-[#F88220] self-end mb-1' href=''>
+              See all dealers
+              <FaLongArrowAltRight className='inline-block w-4 h-4 pl-1 text-[#F88220]' />
+            </a>
+          </div>
+          <ul className='space-y-2 bg-[#F4F4F4] w-3/4 divide divide-x-0'>
+            <li className='flex flex-row space-x-24 p-1'>
+              <a
+                href=''
+                className='text-sm font-semibold self-end hover:text-[#F88220]'
+              >
+                <BsFillCircleFill className='inline-block w-4 h-4 pr-1 text-[#F88220] pb-1' />
+                Dealer name
+              </a>
+              <span className='text-sm'>162 offer</span>
+            </li>
+            <li className='flex flex-row space-x-24 bg-[#F9F9F9] p-1'>
+              <a
+                href=''
+                className='text-sm font-semibold self-end hover:text-[#F88220]'
+              >
+                <BsFillCircleFill className='inline-block w-4 h-4 pr-1 text-[#F88220] pb-1' />
+                Dealer name
+              </a>
+              <span className='text-sm'>162 offer</span>
+            </li>
+            <li className='flex flex-row space-x-24 p-1'>
+              <a
+                href=''
+                className='text-sm font-semibold self-end hover:text-[#F88220]'
+              >
+                <BsFillCircleFill className='inline-block w-4 h-4 pr-1 text-[#F88220] pb-1' />
+                Dealer name
+              </a>
+              <span className='text-sm'>162 offer</span>
+            </li>
+            <li className='flex flex-row space-x-24 bg-[#F9F9F9] p-1'>
+              <a
+                href=''
+                className='text-sm font-semibold self-end hover:text-[#F88220]'
+              >
+                <BsFillCircleFill className='inline-block w-4 h-4 pr-1 text-[#F88220] pb-1' />
+                Dealer name
+              </a>
+              <span className='text-sm'>162 offer</span>
+            </li>
+          </ul>
+        </div>
+        <div className='flex flex-col space-y-2 w-1/3 '>
+          <h3 className='text-xl pb-2'>
+            <strong>Get</strong> daily offers
+          </h3>
+          <form action='post' className='pt-2 space-y-2'>
+            <input
+              type='email'
+              name='email'
+              placeholder='email address'
+              className='block grow-[1]  focus:outline-none py-1.5 pl-7 border-0 mr-4 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-grey-400 w-3/4 '
+            />
+            <p className='text-xs w-3/4 text-justify text-grey'>
+              Available, but have suffered alteration in some form injected
+              humour, or randomised words which don't look even slightly
+              believable.
+            </p>
+            <div className='flex flex-row space-x-16'>
+              <input
+                type='submit'
+                value='Subscribe'
+                className='bg-[#F88220] p-2 uppercase text-white rounded-md text-sm'
+              />
+              <p className='text-xs self-center'>15,000+ other subscribers</p>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
   );
 }
