@@ -1,53 +1,60 @@
 import React from "react";
-
+import { BsGrid3X2GapFill, BsList } from "react-icons/bs";
 function CarListPage() {
   return (
-    <div>
+    <div className='w-full flex flex-col  py-6 drop-shadow-md bg-[#F7F3F7] '>
       {/* page one */}
-      <section>
-        <div>
+      <section className='w-full flex flex-col pl-20 pr-[11rem]'>
+        <div className='flex w-full flex-col space-y-20'>
           <div>
-            <div>
-              <h2>
-                <strong>Mercedes-Benz</strong> CLS 320
-              </h2>
-              <div className='text-sm breadcrumbs'>
-                <ul>
-                  <li>
-                    <a>Home</a>
-                  </li>
-                  <li>
-                    <a>Cars</a>
-                  </li>
-                  <li>
-                    <a href=''> Mercedes-Benz</a>
-                  </li>
-                  <li>Mercedes-Benz CLS 320</li>
-                </ul>
-              </div>
+            <h2>
+              <strong>Mercedes-Benz</strong> CLS 320
+            </h2>
+            <div className='text-sm breadcrumbs'>
+              <ul>
+                <li>
+                  <a>Home</a>
+                </li>
+                <li>
+                  <a>Cars</a>
+                </li>
+                <li>
+                  <a href=''>Mercedes-Benz</a>
+                </li>
+                <li>Mercedes-Benz CLS 320</li>
+              </ul>
             </div>
           </div>
-          <nav>
-            <ul>
-              <li>
-                <a href=''>All Cars</a>
-              </li>
-              <li>
-                <a href=''>New Cars</a>
-              </li>
-              <li>
-                <a href=''>Used Cars</a>
-              </li>
-            </ul>
-          </nav>
-          <div>
-            <a href=''>List View</a>
-            <a href=''>Grid view</a>
+          <div className='flex w-full flex-row justify-between '>
+            <nav>
+              <div className='space-x-2 '>
+                <button className='btn bg-[#F37D1A] text-white btn-sm capitalize h-[2.5rem]'>
+                  All Cars
+                </button>
+                <button className='btn  text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]'>
+                  New Cars
+                </button>
+                <button className='btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]'>
+                  Used Cars
+                </button>
+              </div>
+            </nav>
+            <div className='flex flex-row space-x-1'>
+              <a
+                href=''
+                className='block bg-[#D6D6D6] hover:bg-[#F37D1A] p-1 rounded-md'
+              >
+                <BsList className='w-7 h-7 text-white' />
+              </a>
+              <a href='' className='block bg-[#F88220] p-1 rounded-md'>
+                <BsGrid3X2GapFill className='w-7 h-7 text-white' />
+              </a>
+            </div>
           </div>
         </div>
       </section>
       {/* page two */}
-      <section>
+      <section className=' bg-white pl-20 pr-[11rem]'>
         <div>
           <div>
             <div>
