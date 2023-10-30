@@ -307,13 +307,13 @@ function CarListPage() {
                   </div>
                 </div>
                 <div>
-                  <div class='join space-x-2'>
-                    <button class='join-item btn btn-active'>1</button>
-                    <button class='join-item btn '>2</button>
-                    <button class='join-item btn '>3</button>
+                  <div className='join space-x-2'>
+                    <button className='join-item btn btn-active'>1</button>
+                    <button className='join-item btn '>2</button>
+                    <button className='join-item btn '>3</button>
                     <button className='join-item btn btn-disabled'>...</button>
-                    <button class='join-item btn'>8</button>
-                    <button class='join-item btn'>Next</button>
+                    <button className='join-item btn'>8</button>
+                    <button className='join-item btn'>Next</button>
                   </div>
                 </div>
               </div>
@@ -323,13 +323,13 @@ function CarListPage() {
               </div>
               {/* layer three */}
               <div>
-                <div class='join space-x-2'>
-                  <button class='join-item btn btn-active'>1</button>
-                  <button class='join-item btn '>2</button>
-                  <button class='join-item btn '>3</button>
+                <div className='join space-x-2'>
+                  <button className='join-item btn btn-active'>1</button>
+                  <button className='join-item btn '>2</button>
+                  <button className='join-item btn '>3</button>
                   <button className='join-item btn btn-disabled'>...</button>
-                  <button class='join-item btn'>8</button>
-                  <button class='join-item btn'>Next</button>
+                  <button className='join-item btn'>8</button>
+                  <button className='join-item btn'>Next</button>
                 </div>
               </div>
             </div>
