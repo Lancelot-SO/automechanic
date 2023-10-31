@@ -16,9 +16,9 @@ export default function Home() {
               <strong>Best </strong>Offer
             </h3>
           </div>
-          <a href="/product/car/3" className="flex fle-col pr-3">
+          <div className="flex fle-col pr-3">
             <Carousel />
-          </a>
+          </div>
         </div>
         <div className="flex flex-col w-[20%] ml-4">
           <div className="flex flex-row justify-between">
