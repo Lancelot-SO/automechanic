@@ -2,7 +2,10 @@ import React from "react";
 import { FaLocationDot, FaShareNodes } from "react-icons/fa6";
 import { IoMdArrowDropright } from "react-icons/io";
 import { GiRotaryPhone } from "react-icons/gi";
-import ImageHoverText from "@/app/components/ImageHoverText";
+import { FiLink } from "react-icons/fi";
+import { MdEmail } from "react-icons/md";
+import PartHoverText from "@/app/components/PartHoverText";
+import LoanCalculator from "@/app/components/LoanCalculator";
 function PartDetailPage() {
   const carDetails = [
     {
@@ -10,32 +13,32 @@ function PartDetailPage() {
       value: "Mercedes-Benz CLS 320 Coupe",
     },
     {
-      label: "Fabrication:",
-      value: "2010",
+      label: "Manufacturer:",
+      value: "Mercedes-Benz",
     },
     {
-      label: "Fuel:",
-      value: "Diesel",
+      label: "Year:",
+      value: "2020",
     },
     {
-      label: "Engine:",
-      value: "3200 cm³ (373 kW / 507 CP)",
+      label: "Pat Name:",
+      value: "Head Light",
     },
     {
-      label: "Transmision:",
-      value: "Automatic",
+      label: "Quantity:",
+      value: "10",
     },
     {
-      label: "Color:",
-      value: "Black",
+      label: "Size:",
+      value: "20cm",
     },
     {
-      label: "Doors:",
-      value: "4/5",
+      label: "Brightness Level:",
+      value: "High Brightness",
     },
     {
-      label: "CO2 Emissions combined:",
-      value: "ca 423 g/km",
+      label: "Consumption Level:",
+      value: "90KW",
     },
   ];
   return (
@@ -81,10 +84,10 @@ function PartDetailPage() {
                 Click to share
               </a>
               <a
-                href="/product/part/formpage"
+                href="/offer/buyer"
                 className="flex items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
-                Purchase Vehicle
+                Purchase Parts
               </a>
             </div>
           </div>
@@ -93,33 +96,33 @@ function PartDetailPage() {
       <section className="  border-b-2 mt-2  flex flex-row">
         <div className="w-1/2  px-20">
           <img
-            src="/images/mercedes_picture.jpg"
+            src="/images/sparepart.jpg"
             alt="mercedes"
             className="w-3/3 h-82 pt-4 mb-2"
           />
           <div className="flex flex-row px-8 gap-4">
             <img
-              src="/images/mercedes_picture.jpg"
+              src="/images/sparepart.jpg"
               alt="mercedes"
               className="w-24 h-20 py-4 rounded-md"
             />
             <img
-              src="/images/mercedes_picture.jpg"
+              src="/images/sparepart.jpg"
               alt="mercedes"
               className="w-24 h-20 py-4 rounded-md"
             />
             <img
-              src="/images/mercedes_picture.jpg"
+              src="/images/sparepart.jpg"
               alt="mercedes"
               className="w-24 h-20 py-4 rounded-md"
             />
             <img
-              src="/images/mercedes_picture.jpg"
+              src="/images/sparepart.jpg"
               alt="mercedes"
               className="w-24 h-20 py-4 rounded-md"
             />
             <img
-              src="/images/mercedes_picture.jpg"
+              src="/images/sparepart.jpg"
               alt="mercedes"
               className="w-24 h-20 py-4 rounded-md"
             />
@@ -149,7 +152,10 @@ function PartDetailPage() {
             <small className="font-bold text-md">
               You want to sell a similar car?
             </small>
-            <a href="/offer/new" className="text-[#F88220] font-bold">
+            <a
+              href="/product/part/formpage"
+              className="text-[#F88220] font-bold"
+            >
               +Add offer
             </a>
           </div>
@@ -203,7 +209,9 @@ function PartDetailPage() {
             </p>
           </div>
         </div>
-        <div className="w-1/3 mt-4 bg-green-700"></div>
+        <div className="w-1/3 mt-4 mr-20">
+          <LoanCalculator />
+        </div>{" "}
       </section>
       <section>
         <div className="w-2/3 px-20 mt-4 flex-col flex mb-12">
@@ -226,7 +234,7 @@ function PartDetailPage() {
                 </div>
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
-                    <GiRotaryPhone className="text-white" size={30} />
+                    <FaLocationDot className="text-white" size={30} />
                   </div>
                   <span className="ml-2">
                     Berlin, Germany, nr. 250330, main street
@@ -236,16 +244,16 @@ function PartDetailPage() {
               <div className="flex flex-row justify-between pr-38">
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
-                    <GiRotaryPhone className="text-white" size={30} />
+                    <MdEmail className="text-white" size={30} />
                   </div>
-                  <span className="ml-2">+40 722 222 222</span>
+                  <span className="ml-2">Contact vendor via email</span>
                 </div>
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
-                    <GiRotaryPhone className="text-white" size={30} />
+                    <FiLink className="text-white" size={30} />
                   </div>
                   <span className="ml-2">
-                    Berlin, Germany, nr. 250330, main street
+                    http://www.dealer.automarket.com{" "}
                   </span>
                 </div>
               </div>
@@ -262,16 +270,16 @@ function PartDetailPage() {
         </div>
         <div className="flex flow-row gap-8">
           <div className="w-72">
-            <ImageHoverText />
+            <PartHoverText />
           </div>
           <div className="w-72">
-            <ImageHoverText />
+            <PartHoverText />
           </div>
           <div className="w-72">
-            <ImageHoverText />
+            <PartHoverText />
           </div>
           <div className="w-72">
-            <ImageHoverText />
+            <PartHoverText />
           </div>
         </div>
       </section>
