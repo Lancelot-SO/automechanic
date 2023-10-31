@@ -2,7 +2,7 @@ import React from "react";
 
 function LoanCalculator() {
   return (
-    <fieldset className='flex flex-col w-full space-x-5 space-y-3 bg-[#F2F2F2]'>
+    <fieldset className='flex flex-col w-full space-x-5 space-y-3 bg-[#F2F2F2] rounded-sm'>
       <div className='pt-2 px-5 text-[1.6rem]'>
         <strong>Loan</strong>calulator
       </div>
