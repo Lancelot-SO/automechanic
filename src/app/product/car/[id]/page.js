@@ -2,8 +2,8 @@ import React from "react";
 import { FaLocationDot, FaShareNodes } from "react-icons/fa6";
 import { IoMdArrowDropright } from "react-icons/io";
 import { GiRotaryPhone } from "react-icons/gi";
-import { AiFillPrinter } from "react-icons/ai";
 import ImageHoverText from "@/app/components/ImageHoverText";
+import LoanCalculator from "@/app/components/LoanCalculator";
 
 function CarDetailPage() {
   const carDetails = [
@@ -83,11 +83,10 @@ function CarDetailPage() {
                 Click to share
               </a>
               <a
-                href="/product/car/formpage"
+                href="/offer/buyer"
                 className="flex items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
-                <AiFillPrinter />
-                Print this page
+                Purchase Vehicle
               </a>
             </div>
           </div>
@@ -152,7 +151,10 @@ function CarDetailPage() {
             <small className="font-bold text-md">
               You want to sell a similar car?
             </small>
-            <a href="/offer/new" className="text-[#F88220] font-bold">
+            <a
+              href="/product/part/formpage"
+              className="text-[#F88220] font-bold"
+            >
               +Add offer
             </a>
           </div>
@@ -206,7 +208,9 @@ function CarDetailPage() {
             </p>
           </div>
         </div>
-        <div className="w-1/3 mt-4 bg-green-700"></div>
+        <div className="w-1/3 mt-4 mr-20">
+          <LoanCalculator />
+        </div>
       </section>
       <section>
         <div className="w-2/3 px-20 mt-4 flex-col flex mb-12">

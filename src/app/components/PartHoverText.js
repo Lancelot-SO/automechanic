@@ -1,13 +1,13 @@
 import React from "react";
 
-function ImageHoverText() {
+function PartHoverText() {
   return (
     <div className="flex items-center justify-center mt-2 rounded-md flex-col">
-      <a className="relative block group w-full" href="/product/car/2">
+      <a className="relative block group w-full" href="/product/part/2">
         <div className="w-24">
           <img
             className="absolute inset-0 object-cover w-full h-full group-hover:opacity-50 rounded-t-md"
-            src="/images/mercedes_picture.jpg"
+            src="/images/sparepart.jpg"
           />
         </div>
         <div className="relative h-auto">
@@ -40,4 +40,4 @@ function ImageHoverText() {
   );
 }
 
-export default ImageHoverText;
+export default PartHoverText;
