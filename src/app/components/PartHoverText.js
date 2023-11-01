@@ -34,7 +34,7 @@ function PartHoverText() {
       </a>
       <div className="w-full flex flex-row p-2 bg-[#414141] text-white justify-between px-3 rounded-b-md ">
         <p className="text-xs">Mercedes-Benz 1</p>
-        <p className="text-[#F88220] text-xs">54980 Euro</p>
+        <p className="text-[#F88220] text-xs">54980 GHS</p>
       </div>
     </div>
   );
