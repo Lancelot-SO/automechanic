@@ -129,7 +129,7 @@ function CarDetailPage() {
         </div>
         <div className="w-1/2 flex flex-col">
           <div className="flex flex-row pt-4 mb-2">
-            <h1 className="text-[#F88220] font-bold text-3xl">54.980 EURO</h1>
+            <h1 className="text-[#F88220] font-bold text-3xl">54.980 GHS</h1>
             <small className="mt-1">*Price Negotiable</small>
           </div>
           <div className="w-full">
@@ -235,9 +235,7 @@ function CarDetailPage() {
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
                     <GiRotaryPhone className="text-white" size={30} />
                   </div>
-                  <span className="ml-2">
-                    Berlin, Germany, nr. 250330, main street
-                  </span>
+                  <span className="ml-2">Spintex, Accra- Ghana </span>
                 </div>
               </div>
               <div className="flex flex-row justify-between pr-38">

@@ -11,19 +11,19 @@ function DealerList() {
         <div className="flex flex-col w-3/4 self-center space-y-4">
           <div className="flex flex-row justify-between">
             <a href="/dealer/1" className="text-xl hover:text-[#F98A22]">
-              <strong>Dealer Name Here</strong>
+              <strong>Emmanuel Doe</strong>
             </a>
             <p className="text-[#F98A22]">183 OFFERS</p>
           </div>
           <div className="flex flex-row bg-[#F2F2F2] py-2 text-sm justify-between">
-            <p className="pl-2">314 Columbus Ave, San Francisco, CA 94133</p>
+            <p className="pl-2">Spintex, Accra- Ghana</p>
           </div>
           <div className="flex flex-row text-sm justify-between">
             <div className="flex flex-row space-x-2">
               <p className="flex flex-row items-center">View on map</p>
               <p className="flex flex-row items-center">
                 <BsFillTelephoneFill />
-                (123) 456-78910
+                (233) 556 318 804
               </p>
             </div>
             <a href="/dealer/1">
