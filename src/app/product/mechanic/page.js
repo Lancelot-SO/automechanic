@@ -1,12 +1,12 @@
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 
-function FormPage() {
+function NechanicPage() {
   return (
     <div>
       <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
         <div className="flex px-20 flex-col pt-4">
-          <h1 className="text-2xl font-bold">Buy your parts</h1>
+          <h1 className="text-2xl font-bold">Our repair services</h1>
           <div className="flex flex-row pt-2">
             <small>
               <a href="/" className="cursor-pointer text-black">
@@ -16,7 +16,7 @@ function FormPage() {
             <IoMdArrowDropright className="pt-1" />
             <small>
               <a href="/" className="cursor-pointer text-black">
-                Parts
+                Mechanic
               </a>
             </small>
           </div>
@@ -44,8 +44,8 @@ function FormPage() {
       </div>
       <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 flex flex-col">
         <h2 className="text-2xl mb-4">
-          Buy ​​your vehicle parts on <b>AutoMarket</b> and benefit from more
-          than 1 million potential buyers every month!
+          Order ​​your mechanic on <b>AutoMarket</b> and benefit from more than
+          1 million potential buyers every month!
         </h2>
         <ul>
           <li>Required fields are marked with *</li>
@@ -135,13 +135,13 @@ function FormPage() {
               </div>
             </div>
             <h1 className="pb-4 text-2xl">
-              <b>Parts</b> details
+              <b>Repair</b> services
             </h1>
             <div className="border-b-2 pb-2 mb-4">
               <div className="flex flex-row pb-2 pl-10 gap-8">
                 <div className="flex flex-col">
                   <label htmlFor="partName" className="text-xs">
-                    Part Name:
+                    Choose a category from the following list:
                     <small className="text-red-500 text-lg">*</small>
                   </label>
                   <select
@@ -150,65 +150,21 @@ function FormPage() {
                     className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
                   >
                     <option value="select">select</option>
-                    <option value="option1">Break</option>
-                    <option value="option2">Air condition</option>
-                    <option value="option3">Axle</option>
-                  </select>
-                </div>
-
-                <div className="flex flex-col">
-                  <label htmlFor="partType" className="text-xs">
-                    Part Type:<small className="text-red-500 text-lg">*</small>
-                  </label>
-                  <select
-                    id="partType"
-                    name="partType"
-                    className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
-                  >
-                    <option value="select">select</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </select>
-                </div>
-
-                <div className="flex flex-col">
-                  <label htmlFor="quantity" className="text-xs">
-                    Quantity:
-                    <small className="text-red-500 text-lg">*</small>
-                  </label>
-                  <select
-                    id="quantity"
-                    name="quantity"
-                    className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
-                  >
-                    <option value="select">select</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                  </select>
-                </div>
-
-                <div className="flex flex-col">
-                  <label htmlFor="size" className="text-xs">
-                    Size:<small className="text-red-500 text-lg">*</small>
-                  </label>
-                  <select
-                    id="size"
-                    name="size"
-                    className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
-                  >
-                    <option value="select">select</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="option1">Break Repair</option>
+                    <option value="option2">Lube, Oil and Filter Change</option>
+                    <option value="option3">Tire Services</option>
+                    <option value="option3">
+                      Electrical and Electronic Services
+                    </option>
+                    <option value="option3">Diesel Engine Repair</option>
+                    <option value="option3">Cooling System Repair</option>
                   </select>
                 </div>
               </div>
             </div>
 
             <h1 className="pb-4 text-2xl">
-              <b>Parts</b> description
+              <b>Fault</b> description
             </h1>
 
             <div className="pl-10 flex flex-col border-b-2">
@@ -222,66 +178,6 @@ function FormPage() {
                 cols="50"
                 className="border-2 mr-64 mb-6"
               ></textarea>
-            </div>
-
-            <h1 className="pb-4 text-2xl">
-              <b>Parts</b> Installation
-            </h1>
-
-            <div className="pl-10 flex flex-col border-b-2">
-              <label htmlFor="technical" className="text-xs">
-                Installation Instructions:
-              </label>
-              <textarea
-                id="desc"
-                name="desc"
-                rows="4"
-                cols="50"
-                className="border-2 mr-64 mb-6"
-              ></textarea>
-            </div>
-
-            <h2 className="pb-4 text-2xl">
-              <b>Parts</b> price
-            </h2>
-            <div className="flex flex-row gap-8 pl-10 border-b-2 mb-4 pb-4">
-              <div className="flex flex-col">
-                <label htmlFor="price" className="text-xs">
-                  Price:
-                  <small className="text-red-500 text-lg">*</small>
-                </label>
-                <input
-                  id="price"
-                  name="price"
-                  className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label htmlFor="technical" className="text-xs">
-                  Currency:
-                  <small className="text-red-500 text-lg">*</small>
-                </label>
-                <select
-                  id="technical"
-                  name="technical"
-                  className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
-                >
-                  <option value="select">Euro</option>
-                  <option value="option1">Option 1</option>
-                  <option value="option2">Option 2</option>
-                  <option value="option3">Option 3</option>
-                </select>
-              </div>
-              <div className="flex items-center gap-2 mt-8">
-                <input
-                  type="checkbox"
-                  id="abs-checkbox"
-                  className="ml-2 h-3 w-3 text-indigo-600"
-                />
-                <label htmlFor="priceNegotiable" className="text-gray-700">
-                  Price Negotiable
-                </label>
-              </div>
             </div>
 
             <div className="flex flow-row items-center justify-between">
@@ -309,4 +205,4 @@ function FormPage() {
   );
 }
 
-export default FormPage;
+export default NechanicPage;

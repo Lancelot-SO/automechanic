@@ -8,6 +8,7 @@ import {
 import Link from "next/link";
 import { FaCarSide, FaMotorcycle, FaTruck, FaGears } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
+import { GiMechanicGarage } from "react-icons/gi";
 import { usePathname, useRouter } from "next/navigation";
 function NavBar() {
   const router = useRouter();
@@ -239,6 +240,13 @@ function NavBar() {
                     <span className="uppercase font-semibold">Parts</span>
                   </Link>
                 </li>
+
+                <li className="px-4">
+                  <Link href="/product/mechanic">
+                    <GiMechanicGarage className="text-4xl text-[#989898] hover:text-[#F88220]" />
+                    <span className="uppercase font-semibold">Mechanic</span>
+                  </Link>
+                </li>
                 <li className="pr-12">
                   <hr className="divide-x-2 divide-solid divide-[#DEDFDE] rotate-90" />
                 </li>
@@ -270,6 +278,7 @@ function NavBar() {
                 <option value="bikes">Bikes</option>
                 <option value="trucks">Trucks</option>
                 <option value="parts">Parts</option>
+                <option value="mechanic">Mechanic</option>
               </select>
 
               <button
