@@ -78,9 +78,9 @@ function FormPage() {
                     className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
                   >
                     <option value="select">select</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="option1">Mercedes Benz</option>
+                    <option value="option2">Toyota</option>
+                    <option value="option3">Ford</option>
                   </select>
                 </div>
 
@@ -94,9 +94,9 @@ function FormPage() {
                     className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
                   >
                     <option value="select">select</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="option1">Merceded Benz CLS 320</option>
+                    <option value="option2">Toyota Supra</option>
+                    <option value="option3">Fusion</option>
                   </select>
                 </div>
 
@@ -111,9 +111,9 @@ function FormPage() {
                     className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
                   >
                     <option value="select">select</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="option1">2022</option>
+                    <option value="option2">2019</option>
+                    <option value="option3">2021</option>
                   </select>
                 </div>
 
@@ -150,9 +150,9 @@ function FormPage() {
                     className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
                   >
                     <option value="select">select</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="option1">Break</option>
+                    <option value="option2">Air condition</option>
+                    <option value="option3">Axle</option>
                   </select>
                 </div>
 
