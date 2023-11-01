@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
+import { FaPhone, FaMapMarkedAlt, FaEnvelope, FaGlobe } from "react-icons/fa";
 
 function DealerDetailAddress() {
   return (
@@ -20,18 +20,24 @@ function DealerDetailAddress() {
           <strong>Contact </strong> details
         </div>
         <div className='text-sm space-y-2'>
-          <div>
-            <p>0040 742 016 756</p>
-            <p>0040 742 756 016</p>
+          <div className='flex flex-row space-x-3'>
+            <FaPhone className='bg-[#F89120] text-white rounded-sm w-8 h-8 p-1 self-center' />
+            <div className='text-xs'>
+              <p>0040 742 016 756</p>
+              <p>0040 742 756 016</p>
+            </div>
           </div>
-          <div>
-            <p>Berlin, Germany, nr. 250330</p>
+          <div className='flex flex-row space-x-3'>
+            <FaMapMarkedAlt className='bg-[#F89120] text-white rounded-sm w-8 h-8 p-1 self-center' />
+            <p className='text-xs self-center'>Berlin, Germany, nr. 250330</p>
           </div>
-          <div>
-            <p>office@automarket.com </p>
+          <div className='flex flex-row space-x-3'>
+            <FaEnvelope className='bg-[#F89120] text-white rounded-sm w-8 h-8 p-1 self-center' />
+            <p className='text-xs self-center'>office@automarket.com </p>
           </div>
-          <div>
-            <p>http://www.automarket.com</p>
+          <div className='flex flex-row space-x-3'>
+            <FaGlobe className='bg-[#F89120] text-white rounded-sm w-8 h-8 p-1 self-center' />
+            <a className='text-xs self-center'>http://www.automarket.com</a>
           </div>
         </div>
       </div>

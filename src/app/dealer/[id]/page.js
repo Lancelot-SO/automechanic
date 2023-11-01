@@ -18,7 +18,7 @@ function DealerDetailPage() {
         <div className='flex w-full flex-col space-y-20'>
           <div>
             <h2 className='text-2xl'>
-              <strong>Dealer </strong> name here
+              <strong>Dealer</strong> name here
             </h2>
             <div className='text-sm breadcrumbs'>
               <ul>
@@ -69,7 +69,7 @@ function DealerDetailPage() {
             </div>
             {/* layer two  */}
             <div className='w-full'>
-              <div>{listRender(21)}</div>
+              <div>{listRender(9)}</div>
             </div>
             <div className='pb-8 pt-2'>
               <hr className='w-full hidden' />
