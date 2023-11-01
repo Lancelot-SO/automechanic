@@ -266,7 +266,7 @@ function FormPage() {
                   name="technical"
                   className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
                 >
-                  <option value="select">Euro</option>
+                  <option value="select">GHS</option>
                   <option value="option1">Option 1</option>
                   <option value="option2">Option 2</option>
                   <option value="option3">Option 3</option>
