@@ -23,18 +23,18 @@ function PartHoverText() {
               "
             >
               <div className="flex flex-col w-full text-xs h-auto py-4 px-2 text-[#B7B8B8] space-y-2">
-                <p className=" ">Registration 2002</p>
-                <p className=" ">3.0 Diesel</p>
+                <p className=" ">Brake</p>
+                <p className=" ">Hose</p>
                 <p className=" ">Body Coupe</p>
-                <p className="">120.000 KM</p>
+                <p className="">silver</p>
               </div>
             </div>
           </div>
         </div>
       </a>
       <div className="w-full flex flex-row p-2 bg-[#414141] text-white justify-between px-3 rounded-b-md ">
-        <p className="text-xs">Mercedes-Benz 1</p>
-        <p className="text-[#F88220] text-xs">54980 GHS</p>
+        <p className="text-xs">Brakes</p>
+        <p className="text-[#F88220] text-xs">549 GHS</p>
       </div>
     </div>
   );

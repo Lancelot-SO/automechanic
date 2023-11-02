@@ -17,7 +17,7 @@ const listRender = (listLength) => {
   ));
 };
 
-function CarListPage() {
+function SparePareListPage() {
   const [listDisplay, setListDisplay] = useState(false);
   const imageLength = 21;
   return (
@@ -48,13 +48,13 @@ function CarListPage() {
             <nav>
               <div className="space-x-2 ">
                 <button className="btn bg-[#F37D1A] text-white btn-sm capitalize h-[2.5rem]">
-                  All Cars
+                  All Spare Parts
                 </button>
                 <button className="btn  text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]">
-                  New Cars
+                  New Spare Parts
                 </button>
                 <button className="btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]">
-                  Used Cars
+                  Used Spare Parts
                 </button>
               </div>
             </nav>
@@ -165,4 +165,4 @@ function CarListPage() {
   );
 }
 
-export default CarListPage;
+export default SparePareListPage;
