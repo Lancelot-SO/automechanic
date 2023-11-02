@@ -138,35 +138,45 @@ function NavBar() {
                       </li>
                     </ul>
                   </li>
+
                   <li className="group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row">
                     <Link
                       className="rounded-t py-2 px-2 flex flex-col w-full"
-                      href="/blog"
+                      href="/dealer_page"
                     >
-                      Blog
+                      Dealer page
+                    </Link>
+                  </li>
+                  <li className="group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row">
+                    <Link
+                      className="rounded-t py-2 px-2 flex flex-col w-full"
+                      href="/manufucturer"
+                    >
+                      manufucturer
                     </Link>
                     <ChevronRightIcon className="h-6 w-6 text-[#BCBCBC] pr-1 self-center" />
-
-                    <ul className="absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[168px] group-hover/item:block top-0 left-[180px]">
+                    <ul className="absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[252px] group-hover/item:block top-0 left-[180px]">
                       <li>
                         <Link
-                          className="rounded-t py-2  flex flex-col w-full"
-                          href="/blog"
+                          className="rounded-t py-2  flex flex-col w-full "
+                          href="/manufucturer/1"
                         >
-                          Blog post
+                          list
                         </Link>
                       </li>
                     </ul>
                   </li>
+
                   <li className="group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row">
                     <Link
                       className="rounded-t py-2 px-2 flex flex-col w-full"
                       href="/dealer"
                     >
-                      Dealer list
+                      Dealer
                     </Link>
+
                     <ChevronRightIcon className="h-6 w-6 text-[#BCBCBC] pr-1 self-center" />
-                    <ul className="absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[210px] group-hover/item:block top-0 left-[180px]">
+                    <ul className="absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[295px] group-hover/item:block top-0 left-[180px]">
                       <li>
                         <Link
                           className="rounded-t py-2  flex flex-col w-full "
@@ -177,20 +187,13 @@ function NavBar() {
                       </li>
                     </ul>
                   </li>
+
                   <li className="group/item  bg-[#414141] hover:text-white w-[180px] px-2">
                     <Link
                       className="rounded-t py-2 px-2 flex flex-col w-full"
-                      href="/insurance"
+                      href="/manufucturer_form"
                     >
-                      Insurance
-                    </Link>
-                  </li>
-                  <li className="group/item  bg-[#414141] hover:text-white w-[180px] px-2">
-                    <Link
-                      className="rounded-t py-2 px-2 flex flex-col w-full"
-                      href="/under_construction"
-                    >
-                      Under construction
+                      Manufucturer Form
                     </Link>
                   </li>
                   <li className="group/item  bg-[#414141] hover:text-white w-[180px] px-2">

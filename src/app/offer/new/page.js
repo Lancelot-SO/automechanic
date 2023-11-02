@@ -775,6 +775,31 @@ function AddOfferPage() {
               </div>
             </div>
           </div>
+          <h2 className="pb-4 text-2xl">
+            <b>Vehicle</b> Condition
+          </h2>
+          <div className="flex flex-row border-b-2 pb-2 mb-4">
+            <div className="flex items-center gap-2 pl-10 mb-8 mt-4">
+              <input
+                type="radio"
+                id="condition"
+                className="ml-2 h-3 w-3 text-indigo-600"
+              />
+              <label htmlFor="condition" className="text-gray-700">
+                Brand New
+              </label>
+            </div>
+            <div className="flex items-center gap-2 pl-10 mb-8 mt-4">
+              <input
+                type="radio"
+                id="condition"
+                className="ml-2 h-3 w-3 text-indigo-600"
+              />
+              <label htmlFor="condition" className="text-gray-700">
+                Used
+              </label>
+            </div>
+          </div>
 
           <div className="flex flow-row items-center justify-between">
             <div className="flex items-center gap-2 pl-10 mb-8 mt-4">

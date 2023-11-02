@@ -2,16 +2,16 @@
 
 import React from "react";
 import LoanCalculator from "@/app/components/LoanCalculator";
-import DealerList from "../components/DealerList";
-import DealerSearchFilter from "../components/DealerSearchFilter";
+import DealerSearchFilter from "@/app/components/DealerSearchFilter";
+import ManufucturerList from "@/app/components/ManufucturerList";
 
 const listRender = (listLength) => {
   return Array.from({ length: listLength }).map((_, index) => (
-    <DealerList key={index} />
+    <ManufucturerList key={index} />
   ));
 };
 
-function DealerListPage() {
+function ManufucturerListPage() {
   return (
     <div className="w-full flex flex-col  pt-6 drop-shadow-md bg-[#F7F3F7] ">
       {/* page one */}
@@ -36,7 +36,7 @@ function DealerListPage() {
             <nav>
               <div className="space-x-2 ">
                 <button className="btn bg-[#F37D1A] text-white btn-sm capitalize h-[2.5rem]">
-                  Search vehicles from dealers
+                  Search for Manufucturer
                 </button>
               </div>
             </nav>
@@ -119,4 +119,4 @@ function DealerListPage() {
   );
 }
 
-export default DealerListPage;
+export default ManufucturerListPage;

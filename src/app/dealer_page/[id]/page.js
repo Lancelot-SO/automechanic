@@ -1,17 +1,25 @@
 "use client";
-
-import React from "react";
+import PartHoverText from "@/app/components/PartHoverText";
+import ImageList from "@/app/components/ImageList";
 import LoanCalculator from "@/app/components/LoanCalculator";
-import DealerList from "../components/DealerList";
-import DealerSearchFilter from "../components/DealerSearchFilter";
-
-const listRender = (listLength) => {
-  return Array.from({ length: listLength }).map((_, index) => (
-    <DealerList key={index} />
+import SearchFilter from "@/app/components/SearchFilter";
+import React, { useState } from "react";
+import { BsGrid3X2GapFill, BsList } from "react-icons/bs";
+const imageRender = (imageLength) => {
+  return Array.from({ length: imageLength }).map((_, index) => (
+    <PartHoverText key={index} />
   ));
 };
 
-function DealerListPage() {
+const listRender = (listLength) => {
+  return Array.from({ length: listLength }).map((_, index) => (
+    <PartHoverText key={index} />
+  ));
+};
+
+function CarListPage() {
+  const [listDisplay, setListDisplay] = useState(false);
+  const imageLength = 21;
   return (
     <div className="w-full flex flex-col  pt-6 drop-shadow-md bg-[#F7F3F7] ">
       {/* page one */}
@@ -19,7 +27,7 @@ function DealerListPage() {
         <div className="flex w-full flex-col space-y-20">
           <div>
             <h2 className="text-2xl">
-              <strong>Dealers</strong> ( 2.100 results )
+              <strong>Mercedes-Benz</strong> CLS 320
             </h2>
             <div className="text-sm breadcrumbs">
               <ul>
@@ -27,8 +35,12 @@ function DealerListPage() {
                   <a>Home</a>
                 </li>
                 <li>
-                  <a>Dealers</a>
+                  <a>Cars</a>
                 </li>
+                <li>
+                  <a href="">Mercedes-Benz</a>
+                </li>
+                <li>Mercedes-Benz CLS 320</li>
               </ul>
             </div>
           </div>
@@ -36,10 +48,32 @@ function DealerListPage() {
             <nav>
               <div className="space-x-2 ">
                 <button className="btn bg-[#F37D1A] text-white btn-sm capitalize h-[2.5rem]">
-                  Search vehicles from dealers
+                  All Spare Parts
+                </button>
+
+                <button className="btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]">
+                  Used Spare Parts
                 </button>
               </div>
             </nav>
+            <div className="flex flex-row space-x-1">
+              <button
+                onClick={() => setListDisplay(!listDisplay)}
+                className={`block ${
+                  listDisplay ? "bg-[#F88220]" : "bg-[#D6D6D6]"
+                } hover:bg-[#F37D1A] p-1 rounded-md`}
+              >
+                <BsList className="w-7 h-7 text-white" />
+              </button>
+              <button
+                onClick={() => setListDisplay(!listDisplay)}
+                className={`block ${
+                  listDisplay ? "bg-[#D6D6D6]" : "bg-[#F88220]"
+                } p-1 rounded-sm`}
+              >
+                <BsGrid3X2GapFill className="w-7 h-7 text-white" />
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -47,7 +81,7 @@ function DealerListPage() {
       <section className=" bg-white pl-20 pr-[11rem]">
         <div className="flex flex-row py-8">
           <form action="" className="flex flex-col w-1/4 space-y-8">
-            <DealerSearchFilter />
+            <SearchFilter />
             <LoanCalculator />
           </form>
 
@@ -97,10 +131,20 @@ function DealerListPage() {
             </div>
             {/* layer two  */}
             <div className="w-full">
-              <div>{listRender(9)}</div>
+              {listDisplay ? (
+                <div>{listRender(21)}</div>
+              ) : (
+                <div className="grid grid-cols-3 gap-3">
+                  {
+                    // imageLength
+
+                    imageRender(imageLength)
+                  }
+                </div>
+              )}
             </div>
             <div className="pb-8 pt-2">
-              <hr className="w-full hidden " />
+              <hr className={`w-full  ${listDisplay ? "hidden" : "block"}`} />
             </div>
             {/* layer three */}
 
@@ -119,4 +163,4 @@ function DealerListPage() {
   );
 }
 
-export default DealerListPage;
+export default CarListPage;
