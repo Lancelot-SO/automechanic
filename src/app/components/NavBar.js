@@ -155,7 +155,7 @@ function NavBar() {
                       manufucturer
                     </Link>
                     <ChevronRightIcon className="h-6 w-6 text-[#BCBCBC] pr-1 self-center" />
-                    <ul className="absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[252px] group-hover/item:block top-0 left-[180px]">
+                    <ul className="absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[213px] group-hover/item:block top-0 left-[180px]">
                       <li>
                         <Link
                           className="rounded-t py-2  flex flex-col w-full "
@@ -176,7 +176,7 @@ function NavBar() {
                     </Link>
 
                     <ChevronRightIcon className="h-6 w-6 text-[#BCBCBC] pr-1 self-center" />
-                    <ul className="absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[295px] group-hover/item:block top-0 left-[180px]">
+                    <ul className="absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[255px] group-hover/item:block top-0 left-[180px]">
                       <li>
                         <Link
                           className="rounded-t py-2  flex flex-col w-full "
