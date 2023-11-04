@@ -5,8 +5,8 @@ function LoginPage() {
   return (
     <div>
       <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
-        <div className="flex px-20 flex-col pt-4">
-          <h1 className="text-3xl">
+        <div className="flex pl-6 lg:px-20 flex-col pt-4">
+          <h1 className="lg:text-3xl text-xl">
             <b>Vehicle</b> Insurance
           </h1>
           <div className="flex flex-row pt-2">
@@ -25,21 +25,21 @@ function LoginPage() {
           <div>
             <a
               href="/"
-              className="flex items-center justify-center font-bold w-40 mt-6 h-10  bg-[#F88220] text-white rounded-sm drop-shadow-md"
+              className="flex items-center justify-center font-bold w-40 lg:mt-6 mt-8 h-10  bg-[#F88220] text-white rounded-sm drop-shadow-md"
             >
               Choose from below
             </a>
           </div>
         </div>
       </div>
-      <div className="flex flex-row gap-4">
-        <div className="bg-gray-100 px-8 h-50 w-1/2 ml-20 py-4 my-6">
+      <div className="flex flex-col lg:flex-row gap-4">
+        <div className="bg-gray-100 px-8 h-50 lg:w-1/2 w-60 lg:ml-20 ml-6 py-4 my-6">
           <h2 className="text-3xl pb-4">
             <b>Returning</b> user
           </h2>
           <div className="">
             <form>
-              <div className="flex flex-row gap-4">
+              <div className="flex flex-col lg:flex-row gap-4">
                 <div className="mb-4">
                   <label
                     htmlFor="email"
@@ -51,7 +51,7 @@ function LoginPage() {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-80 border rounded py-2 px-3"
+                    className="lg:w-80 border rounded py-2 lg:px-3"
                   />
                 </div>
 
@@ -66,7 +66,7 @@ function LoginPage() {
                     type="password"
                     id="password"
                     name="password"
-                    className="w-80 border rounded py-2 px-3"
+                    className="lg:w-80 border rounded py-2 lg:px-3"
                   />
                 </div>
               </div>
@@ -96,13 +96,13 @@ function LoginPage() {
             </form>
           </div>
         </div>
-        <div className="w-1/2 bg-gray-100 my-6 h-50 mr-44 py-4">
+        <div className="lg:w-1/2 px-6 w-60 bg-gray-100 my-6 h-50 mr-44 py-4 ml-6 lg:ml-0">
           <h2 className="text-3xl pb-4 pl-8">
             <b>New</b> user
           </h2>
           <form className="flex flex-col">
-            <div className="flex flex-row">
-              <div className="flex flex-row">
+            <div className="flex lg:flex-row flex-col">
+              <div className="flex flex-row pl-6 lg:pl-0">
                 <div className="gap-1 flex flex-row">
                   <div className="flex flex-col">
                     <label
@@ -126,7 +126,7 @@ function LoginPage() {
                   </div>
                 </div>
               </div>
-              <div className="ml-20">
+              <div className="lg:ml-20">
                 <div className="gap-1 flex flex-row">
                   <input
                     type="radio"
