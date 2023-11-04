@@ -5,7 +5,7 @@ function FormPage() {
   return (
     <div>
       <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
-        <div className="flex px-20 flex-col pt-4">
+        <div className="flex px-4 lg:px-20 flex-col pt-4">
           <h1 className="text-2xl font-bold">Buy your parts</h1>
           <div className="flex flex-row pt-2">
             <small>
@@ -42,7 +42,7 @@ function FormPage() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 flex flex-col">
+      <div className="bg-gray-100 hidden px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 lg:flex flex-col">
         <h2 className="text-2xl mb-4">
           Buy ​​your vehicle parts on <b>AutoMarket</b> and benefit from more
           than 1 million potential buyers every month!
@@ -59,14 +59,14 @@ function FormPage() {
           </li>
         </ul>
       </div>
-      <section className="flex px-20 flex-col">
+      <section className="flex px-4 lg:px-20 flex-col">
         <div>
           <h1 className="pb-4 text-2xl">
             <b>Vehicle</b> data
           </h1>
           <form className="flex flex-col">
             <div className="border-b-2 pb-2 mb-4">
-              <div className="flex flex-row pb-2 pl-10 gap-8">
+              <div className="flex flex-col lg:flex-row pb-2 pl-10 gap-8">
                 <div className="flex flex-col">
                   <label htmlFor="manufacturer" className="text-xs">
                     Manufacturer:
@@ -138,7 +138,7 @@ function FormPage() {
               <b>Parts</b> details
             </h1>
             <div className="border-b-2 pb-2 mb-4">
-              <div className="flex flex-row pb-2 pl-10 gap-8">
+              <div className="flex flex-col lg:flex-row pb-2 pl-10 gap-8">
                 <div className="flex flex-col">
                   <label htmlFor="partName" className="text-xs">
                     Part Name:
@@ -220,7 +220,7 @@ function FormPage() {
                 name="desc"
                 rows="8"
                 cols="50"
-                className="border-2 mr-64 mb-6"
+                className="border-2 mr-64 mb-6 w-60 lg:w-1/2"
               ></textarea>
             </div>
 
@@ -237,14 +237,14 @@ function FormPage() {
                 name="desc"
                 rows="4"
                 cols="50"
-                className="border-2 mr-64 mb-6"
+                className="border-2 mr-64 mb-6 w-60 lg:w-1/2"
               ></textarea>
             </div>
 
             <h2 className="pb-4 text-2xl">
               <b>Parts</b> price
             </h2>
-            <div className="flex flex-row gap-8 pl-10 border-b-2 mb-4 pb-4">
+            <div className="flex flex-col lg:flex-row gap-8 pl-10 border-b-2 mb-4 pb-4">
               <div className="flex flex-col">
                 <label htmlFor="price" className="text-xs">
                   Price:

@@ -4,7 +4,7 @@ function ImageHoverText() {
   return (
     <div className="flex items-center justify-center mt-2 rounded-md flex-col">
       <a className="relative block group w-full" href="/product/car/2">
-        <div className="w-24">
+        <div className="lg:w-24 w-48">
           <img
             className="absolute inset-0 object-cover w-full h-full group-hover:opacity-50 rounded-t-md"
             src="/images/mercedes_picture.jpg"

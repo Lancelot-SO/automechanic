@@ -7,9 +7,9 @@ import { BsFillCircleFill } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between  bg-[#F7F3F7]">
+    <main className="flex min-h-screen lg:w-full min-w-screen flex-col  items-center justify-between lg:px-0 bg-[#F7F3F7]">
       {/* section one */}
-      <section className="w-full flex flex-row px-20 py-6 drop-shadow-md">
+      <section className="lg:w-full flex flex-col lg:flex-row ml-20 lg:px-20 py-6 drop-shadow-md">
         <div className="flex flex-col w-[70%]">
           <div>
             <h3 className="text-2xl pb-4 ">
@@ -20,7 +20,7 @@ export default function Home() {
             <Carousel />
           </div>
         </div>
-        <div className="flex flex-col w-[20%] ml-4">
+        <div className="flex flex-col w-60 lg:w-[20%] ml-4">
           <div className="flex flex-row justify-between">
             <h3 className="text-2xl pb-2">
               <strong>Latest</strong> offers
@@ -40,11 +40,14 @@ export default function Home() {
         </div>
       </section>
       {/* section two */}
-      <section className="w-full flex flew-row bg-white px-20 py-6">
-        <div className="w-1/2 flex flex-row place-items-center space-x-4 bg-[#F2F2F2] rounded-md p-5 justify-between mr-4">
-          <div className="flex flex-row space-x-6">
-            <a href="" className="block bg-[#F88220] p-2 rounded-md">
-              <FaSearch className="w-7 h-7 text-white" />
+      <section className="lg:w-full flex flex-col lg:flex-row bg-white px-20 py-6">
+        <div className="w-full lg:w-1/2 flex flex-row place-items-center space-x-4 bg-[#F2F2F2] rounded-md p-5 justify-between mb-4 lg:mb-0 mr-4">
+          <div className="flex lg:flex-row space-x-6">
+            <a
+              href=""
+              className="flex lg:block bg-[#F88220] p-2 rounded-md items-center"
+            >
+              <FaSearch className="lg:w-7 lg:h-7 text-white" />
             </a>
             <div>
               <h3 className="text-xl">
@@ -63,10 +66,13 @@ export default function Home() {
             Search
           </a>
         </div>
-        <div className="w-1/2 flex flex-row place-items-center space-x-4 bg-[#F2F2F2] rounded-md p-5 justify-between mr-20">
-          <div className="flex flex-row space-x-6">
-            <a className="block bg-[#F88220] p-2 rounded-md" href="">
-              <FaDollarSign className="w-8 h-8 text-white" />
+        <div className="w-full lg:w-1/2 flex flex-row place-items-center space-x-4 bg-[#F2F2F2] rounded-md p-5 justify-between mr-20">
+          <div className="flex lg:flex-row space-x-6">
+            <a
+              className="flex lg:block bg-[#F88220] p-2 rounded-md items-center"
+              href=""
+            >
+              <FaDollarSign className="lg:w-8 lg:h-8 text-white" />
             </a>
             <div>
               <h3 className="text-xl">
@@ -89,8 +95,8 @@ export default function Home() {
       <div>
         <hr className="w-full" />
       </div>
-      <section className="w-full flex flew-row bg-white px-20 py-6 justify-stretch">
-        <div className="flex flex-col space-y-2 w-1/3 mr-4">
+      <section className="w-full flex-col flex lg:flex-row bg-white lg:px-20 px-10 py-6 justify-stretch">
+        <div className="flex flex-col space-y-2 w-full lg:w-1/3 mb-4 lg:mb-0 mr-4">
           <h3 className="text-xl pb-2">
             <strong>Popular</strong> Articles
           </h3>
@@ -121,7 +127,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col space-y-2 w-1/3">
+        <div className="flex flex-col space-y-2 mb-4 lg:mb-0 w-full lg:w-1/3">
           <div className="text-xl pb-2 flex flex-row space-x-16">
             <h3>
               <strong>Car </strong>dealers
@@ -131,7 +137,7 @@ export default function Home() {
               <FaLongArrowAltRight className="inline-block w-4 h-4 pl-1 text-[#F88220]" />
             </a>
           </div>
-          <ul className="space-y-2 bg-[#F4F4F4] w-3/4 divide divide-x-0">
+          <ul className="space-y-2 bg-[#F4F4F4] lg:w-3/4 divide divide-x-0">
             <li className="flex flex-row space-x-24 p-1">
               <a
                 href=""
@@ -174,7 +180,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col space-y-2 w-1/3 ">
+        <div className="flex flex-col space-y-2 lg:w-1/3 ">
           <h3 className="text-xl pb-2">
             <strong>Get</strong> daily offers
           </h3>
