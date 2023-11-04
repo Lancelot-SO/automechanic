@@ -1,11 +1,17 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
+import NavBarNew from "./NavBarNew";
 
 function Layout({ children }) {
+  useEffect(() => {
+    import("preline");
+  }, []);
+
   return (
-    <div>
-      <NavBar />
+    <div className='overflow-x-hidden'>
+      <NavBarNew />
       {children}
       <Footer />
     </div>
