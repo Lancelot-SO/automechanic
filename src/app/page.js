@@ -1,20 +1,17 @@
 import Image from "next/image";
-import Carousel from "./components/Carousel";
-import { BiSolidCaretDownSquare, BiSolidCaretUpSquare } from "react-icons/bi";
-import ImageHoverText from "./components/ImageHoverText";
 import { FaSearch, FaDollarSign, FaLongArrowAltRight } from "react-icons/fa";
 import { BsFillCircleFill } from "react-icons/bs";
-import HomePageWrapper from "./components/HomePageWrapper";
+import HeroPage from "./components/HeroPage";
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-cneter'>
       <div className='bg-[#F7F3F7]'>
-        <HomePageWrapper />
+        <HeroPage />
       </div>
 
       {/* section two */}
-      <div className='max-w-[85rem] mx-auto  lg:px-16 pb-4 bg-white pt-4'>
-        <section className='grid lg:grid-cols-2 gap-4 lg:gap-2 xl:gap-[12rem] md:items-center place-items-start'>
+      <div className='max-w-[85rem] mx-auto  lg:px-10 pb-4 bg-white pt-4'>
+        <section className='grid lg:grid-cols-2 gap-4 lg:gap-2 xl:gap-[13rem] md:items-center place-items-start'>
           <div className='space-x-4 bg-[#F2F2F2] rounded-md py-6 px-10 h-[6rem] sm:mx-0 mx-2'>
             <div className='flex flex-row space-x-6 h-[6rem]'>
               <a
@@ -66,7 +63,7 @@ export default function Home() {
       <div>
         <hr className='w-full' />
       </div>
-      <div className='max-w-[85rem] mx-auto  lg:px-16 pb-4 bg-white pt-4 '>
+      <div className='max-w-[85rem] mx-auto  lg:px-10 pb-4 bg-white pt-4 '>
         <section className='grid lg:grid-cols-3 gap-4 lg:gap-2 xl:gap-[1rem] md:items-center place-items-start'>
           <div className='space-x-2 py-2 sm:mx-0 mx-2 px-2 flex flex-col w-[95%] md:border-none border '>
             <h3 className='text-lg pb-2'>

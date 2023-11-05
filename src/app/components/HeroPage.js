@@ -1,12 +1,10 @@
 import React from "react";
 import Carousel from "./Carousel";
-import Image from "next/image";
+
 import { BiSolidCaretDownSquare, BiSolidCaretUpSquare } from "react-icons/bi";
 import ImageHoverText from "./ImageHoverText";
-import { FaSearch, FaDollarSign, FaLongArrowAltRight } from "react-icons/fa";
-import { BsFillCircleFill } from "react-icons/bs";
 
-function HomePageWrapper() {
+function HeroPage() {
   return (
     <div className='max-w-[85rem] mx-auto px-4 sm:px-2 lg:px-16 pb-4'>
       {/* <!-- Grid --> */}
@@ -46,4 +44,4 @@ function HomePageWrapper() {
   );
 }
 
-export default HomePageWrapper;
+export default HeroPage;
