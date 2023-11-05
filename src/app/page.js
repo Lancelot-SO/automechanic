@@ -11,9 +11,9 @@ export default function Home() {
 
       {/* section two */}
       <div className='max-w-[85rem] mx-auto  lg:px-10 pb-4 bg-white pt-4'>
-        <section className='grid lg:grid-cols-2 gap-4 lg:gap-2 xl:gap-[13rem] md:items-center place-items-start'>
+        <section className='grid lg:grid-cols-2 gap-4 lg:gap-2 xl:gap-[15rem] md:items-center place-items-start'>
           <div className='space-x-4 bg-[#F2F2F2] rounded-md py-6 px-10 h-[6rem] sm:mx-0 mx-2'>
-            <div className='flex flex-row space-x-6 h-[6rem]'>
+            <div className='flex flex-row space-x-4 h-[6rem]'>
               <a
                 href=''
                 className='block bg-[#F88220] p-2 rounded-md h-[3rem] '
@@ -37,7 +37,7 @@ export default function Home() {
             </div>
           </div>
           <div className='relative space-x-4 bg-[#F2F2F2] rounded-md  py-6 px-10 h-[6rem] sm:mx-0 mx-2'>
-            <div className='flex flex-row space-x-6 h-[6rem]'>
+            <div className='flex flex-row space-x-4 h-[6rem]'>
               <a className='block bg-[#F88220] p-2 rounded-md h-[3rem]' href=''>
                 <FaDollarSign className='w-8 h-8 text-white' />
               </a>

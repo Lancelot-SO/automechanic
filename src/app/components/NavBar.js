@@ -347,18 +347,18 @@ function NavBar() {
             method='post'
             className='flex flex-row place-items-center grow sm:pb-0 pb-12'
           >
-            <div className='flex flex-row grow drop-shadow-md h-10  '>
+            <div className='flex sm:flex-row flex-col grow drop-shadow-md h-10  '>
               <input
                 type='text'
                 name='quick_search'
                 placeholder='Ex: Mercedes-Benz E220'
-                className='block grow-[1]  focus:outline-none py-1.5 pl-7 border-0 mr-4 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-grey-400 '
+                className='block  w-full  focus:outline-none py-1.5 pl-7 border-0 mr-4 rounded-md ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-grey-400 '
               />
-              <div className='flex flex-col sm:flex-row ml-4 sm:ml-8'>
+              <div className='flex sm:flex-row  sm:ml-8 sm:mt-0 mt-4 justify-between'>
                 <select
                   name='type-option'
                   id=''
-                  className='w-28 px-2 py-[0.65rem] sm:mb-0 mb-2  mr-2 drop-shadow-md rounded-md border-0 focus:outline-none  ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-grey-400'
+                  className='w-[10rem] sm:w-24 px-2 sm:py-[0.65rem] py-2.5  sm:mb-0   mr-2 drop-shadow-md rounded-md border-0 focus:outline-none  ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-grey-400'
                 >
                   <option value='cars' defaultValue='cars'>
                     Cars
@@ -368,10 +368,10 @@ function NavBar() {
                   <option value='parts'>Parts</option>
                   <option value='mechanic'>Mechanic</option>
                 </select>
-                <div className='flex flex-grow ml-[-7rem] sm:ml-0'>
+                <div className='flex sm:ml-0'>
                   <button
                     type='submit'
-                    className='flex items-center justify-center  sm:w-[6rem] w-[14rem]  mr-2 p-4 h-[2.5rem]  bg-[#F88220] text-white rounded-md uppercase drop-shadow-md'
+                    className='flex items-center justify-center w-[10rem] sm:w-24  p-[1] h-[2.6rem]  bg-[#F88220] text-white rounded-md uppercase drop-shadow-md'
                   >
                     <FaSearch className='mr-1' /> Search
                   </button>
