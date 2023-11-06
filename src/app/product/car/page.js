@@ -23,8 +23,8 @@ function CarListPage() {
   return (
     <div className="w-full flex flex-col  pt-6 drop-shadow-md bg-[#F7F3F7] ">
       {/* page one */}
-      <section className="w-full flex flex-row lg:flex-col lg:pl-20 pr-[11rem]">
-        <div className="flex lg:w-full flex-col space-y-20">
+      <section className="w-full flex flex-row lg:flex-col lg:pl-20 lg:pr-[11rem]">
+        <div className="flex px-4 lg:px-0 lg:w-full flex-col space-y-20">
           <div>
             <h2 className="text-2xl">
               <strong>Mercedes-Benz</strong> CLS 320
@@ -40,7 +40,7 @@ function CarListPage() {
                 <li>
                   <a href="">Mercedes-Benz</a>
                 </li>
-                <li className="hidden lg:flex">Mercedes-Benz CLS 320</li>
+                <li className="hidden lg:flex">Mercedes-Benz CLS</li>
               </ul>
             </div>
           </div>
@@ -80,7 +80,7 @@ function CarListPage() {
         </div>
       </section>
       {/* page two */}
-      <section className=" bg-white lg:pl-20 pr-[11rem]">
+      <section className=" bg-white lg:pl-20 lg:pr-[11rem]">
         <div className="flex flex-col lg:flex-row py-8">
           <form
             action=""
@@ -90,11 +90,11 @@ function CarListPage() {
             <LoanCalculator />
           </form>
 
-          <div className="flex flex-col pl-4 w-3/4">
+          <div className="flex flex-col lg:pl-4 lg:w-3/4">
             {/* layer one */}
             <div className="flex flex-row justify-between">
               <div className="flex flex-row space-x-2 mt-2 lg:mt-0">
-                <div>
+                <div className="px-4 lg:px-0">
                   <select
                     name="sort_by"
                     id="sort_by "
@@ -153,7 +153,7 @@ function CarListPage() {
             </div>
             {/* layer three */}
 
-            <div className="join space-x-2 lg:self-end lg:mr-0 mr-16">
+            <div className="join space-x-2 lg:self-end lg:mr-0 mr-16 lg:flex px-4 lg:px-0">
               <button className="join-item btn btn-active ">1</button>
               <button className="join-item btn ">2</button>
               <button className="join-item btn ">3</button>

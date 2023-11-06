@@ -23,7 +23,7 @@ function CarListPage() {
   return (
     <div className="w-full flex flex-col  pt-6 drop-shadow-md bg-[#F7F3F7] ">
       {/* page one */}
-      <section className="w-full flex flex-row lg:flex-col lg:pl-20 pr-[11rem]">
+      <section className="w-full flex flex-row lg:flex-col px-4 lg:pl-20 lg:pr-[11rem]">
         <div className="flex lg:w-full flex-col space-y-20">
           <div>
             <h2 className="text-2xl">
@@ -40,7 +40,7 @@ function CarListPage() {
                 <li>
                   <a href="">Mercedes-Benz</a>
                 </li>
-                <li className="hidden lg:flex">Mercedes-Benz CLS 320</li>
+                <li className="hidden lg:flex">Mercedes-Benz CLS</li>
               </ul>
             </div>
           </div>
@@ -55,9 +55,6 @@ function CarListPage() {
                 </button>
                 <button className="btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]">
                   Used Cars
-                </button>
-                <button className="btn bg-[#F37D1A] text-white btn-sm capitalize h-[2.5rem]">
-                  Search for Manufucturer
                 </button>
               </div>
             </nav>
@@ -83,7 +80,7 @@ function CarListPage() {
         </div>
       </section>
       {/* page two */}
-      <section className=" bg-white lg:pl-20 pr-[11rem]">
+      <section className=" bg-white lg:pl-20 lg:pr-[11rem]">
         <div className="flex flex-col lg:flex-row py-8">
           <form
             action=""
@@ -93,7 +90,7 @@ function CarListPage() {
             <LoanCalculator />
           </form>
 
-          <div className="flex flex-col pl-4 w-3/4">
+          <div className="flex flex-col px-4 lg:w-3/4">
             {/* layer one */}
             <div className="flex flex-row justify-between">
               <div className="flex flex-row space-x-2 mt-2 lg:mt-0">

@@ -33,7 +33,7 @@ function LoginPage() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-4">
-        <div className="bg-gray-100 px-8 h-50 lg:w-1/2 w-60 lg:ml-20 ml-6 py-4 my-6">
+        <div className="bg-gray-100 px-8 h-50 lg:w-1/2 w-80 lg:ml-20 ml-6 py-4 my-6">
           <h2 className="text-3xl pb-4">
             <b>Returning</b> user
           </h2>
@@ -96,7 +96,7 @@ function LoginPage() {
             </form>
           </div>
         </div>
-        <div className="lg:w-1/2 px-6 w-60 bg-gray-100 my-6 h-50 mr-44 py-4 ml-6 lg:ml-0">
+        <div className="lg:w-1/2 px-6 w-80 bg-gray-100 my-6 h-50 mr-44 py-4 ml-6 lg:ml-0">
           <h2 className="text-3xl pb-4 pl-8">
             <b>New</b> user
           </h2>

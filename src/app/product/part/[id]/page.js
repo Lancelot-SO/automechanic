@@ -2,50 +2,50 @@ import React from "react";
 import { FaLocationDot, FaShareNodes } from "react-icons/fa6";
 import { IoMdArrowDropright } from "react-icons/io";
 import { GiRotaryPhone } from "react-icons/gi";
-import { FiLink } from "react-icons/fi";
-import { MdEmail } from "react-icons/md";
+import { ImLocation2 } from "react-icons/im";
 import PartHoverText from "@/app/components/PartHoverText";
 import LoanCalculator from "@/app/components/LoanCalculator";
-function PartDetailPage() {
+
+function CarDetailPage() {
   const carDetails = [
     {
       label: "Model:",
       value: "Mercedes-Benz CLS 320 Coupe",
     },
     {
-      label: "Manufacturer:",
-      value: "Mercedes-Benz",
+      label: "Fabrication:",
+      value: "2010",
     },
     {
-      label: "Year:",
-      value: "2020",
+      label: "Type:",
+      value: "C43",
     },
     {
-      label: "Pat Name:",
-      value: "Head Light",
+      label: "Bolt:",
+      value: "Double Bolt",
     },
     {
-      label: "Quantity:",
-      value: "10",
+      label: "Transmision:",
+      value: "Automatic",
     },
     {
-      label: "Size:",
-      value: "20cm",
+      label: "Color:",
+      value: "Black",
     },
     {
-      label: "Brightness Level:",
-      value: "High Brightness",
+      label: "Pad:",
+      value: "Flat pad",
     },
     {
-      label: "Consumption Level:",
-      value: "90KW",
+      label: "Valve",
+      value: "Double Valve",
     },
   ];
   return (
     <div>
       <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
-        <div className="flex px-20 flex-col pt-4">
-          <h1 className="text-2xl font-bold">Sell your vehicle</h1>
+        <div className="flex px-8 lg:px-20 flex-col pt-4">
+          <h1 className="text-2xl font-bold">Sell your Sparepart</h1>
           <div className="flex flex-row pt-2">
             <small>
               <a href="/" className="cursor-pointer text-black">
@@ -59,17 +59,17 @@ function PartDetailPage() {
               </a>
             </small>
           </div>
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-row items-center gap-4 justify-between">
             <div className="flex flex-row gap-2">
               <a
                 href="/"
                 className="flex items-center justify-center w-40 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
-                Vehicle description
+                Part description
               </a>
               <a
                 href="/"
-                className="flex items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-gray-500 text-white rounded-sm drop-shadow-md"
+                className="lg:flex hidden items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-gray-500 text-white rounded-sm drop-shadow-md"
               >
                 <FaLocationDot />
                 Vehicle location
@@ -78,7 +78,7 @@ function PartDetailPage() {
             <div className="flex flex-row gap-2 mr-24">
               <a
                 href="/"
-                className="flex items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-gray-500 hover:bg-[#F88220] text-white rounded-sm drop-shadow-md"
+                className="lg:flex hidden items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-gray-500 hover:bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
                 <FaShareNodes />
                 Click to share
@@ -87,20 +87,20 @@ function PartDetailPage() {
                 href="/offer/buyer"
                 className="flex items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
-                Purchase Parts
+                Purchase Sparepart
               </a>
             </div>
           </div>
         </div>
       </div>
-      <section className="  border-b-2 mt-2  flex flex-row">
-        <div className="w-1/2  px-20">
+      <section className="  border-b-2 mt-2  flex flex-col lg:flex-row">
+        <div className="lg:w-1/2 px-8 lg:px-20">
           <img
             src="/images/sparepart.jpg"
             alt="mercedes"
             className="w-3/3 h-82 pt-4 mb-2"
           />
-          <div className="flex flex-row px-8 gap-4">
+          <div className="flex flex-row lg:px-8 gap-4">
             <img
               src="/images/sparepart.jpg"
               alt="mercedes"
@@ -119,16 +119,16 @@ function PartDetailPage() {
             <img
               src="/images/sparepart.jpg"
               alt="mercedes"
-              className="w-24 h-20 py-4 rounded-md"
+              className="w-24 h-20 py-4 rounded-md lg:flex hidden"
             />
             <img
               src="/images/sparepart.jpg"
               alt="mercedes"
-              className="w-24 h-20 py-4 rounded-md"
+              className="w-24 h-20 py-4 rounded-md lg:flex hidden"
             />
           </div>
         </div>
-        <div className="w-1/2 flex flex-col">
+        <div className="lg:w-1/2 px-8 lg:px-0 flex flex-col">
           <div className="flex flex-row pt-4 mb-2">
             <h1 className="text-[#F88220] font-bold text-3xl">54.980 GHS</h1>
             <small className="mt-1">*Price Negotiable</small>
@@ -150,7 +150,7 @@ function PartDetailPage() {
           </div>
           <div className="flex gap-10 mt-4 items-center">
             <small className="font-bold text-md">
-              You want to sell a similar car?
+              You want to sell a similar part?
             </small>
             <a
               href="/product/part/formpage"
@@ -161,8 +161,8 @@ function PartDetailPage() {
           </div>
         </div>
       </section>
-      <section className=" mt-2 flex flex-row">
-        <div className="w-2/3 px-20 mt-4 flex-col flex">
+      <section className=" mt-2 flex flex-col lg:flex-row">
+        <div className="lg:w-2/3 px-8 lg:px-20 mt-4 flex-col flex">
           <div className="border-b-2 pb-4">
             <h1 className="text-xl">
               <b>Vehicle</b> information
@@ -209,12 +209,12 @@ function PartDetailPage() {
             </p>
           </div>
         </div>
-        <div className="w-1/3 mt-4 mr-20">
+        <div className="lg:w-1/3 px-8 lg:px-0 mt-4 lg:mr-20">
           <LoanCalculator />
-        </div>{" "}
+        </div>
       </section>
       <section>
-        <div className="w-2/3 px-20 mt-4 flex-col flex mb-12">
+        <div className="lg:w-2/3 px-8 lg:px-20 mt-4 flex-col flex mb-12">
           <div className="border-b-2 pb-20">
             <h1 className="text-xl">
               <b>Contact</b> details
@@ -225,7 +225,7 @@ function PartDetailPage() {
             </p>
 
             <div className="flex flex-col my-4 text-gray-500">
-              <div className="flex flex-row mb-6 justify-between pr-38">
+              <div className="flex flex-col lg:flex-row mb-6 justify-between pr-38 gap-4 lg:gap-0">
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
                     <GiRotaryPhone className="text-white" size={30} />
@@ -234,33 +234,31 @@ function PartDetailPage() {
                 </div>
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
-                    <FaLocationDot className="text-white" size={30} />
+                    <ImLocation2 className="text-white" size={30} />
                   </div>
                   <span className="ml-2">Spintex, Accra- Ghana </span>
                 </div>
               </div>
-              <div className="flex flex-row justify-between pr-38">
+              <div className="flex flex-col lg:flex-row justify-between pr-38 gap-4 lg:gap-0">
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
-                    <MdEmail className="text-white" size={30} />
+                    <GiRotaryPhone className="text-white" size={30} />
                   </div>
-                  <span className="ml-2">Contact vendor via email</span>
+                  <span className="ml-2">+40 722 222 222</span>
                 </div>
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
-                    <FiLink className="text-white" size={30} />
+                    <ImLocation2 className="text-white" size={30} />
                   </div>
-                  <span className="ml-2">
-                    http://www.dealer.automarket.com{" "}
-                  </span>
+                  <span className="ml-2">Spintex, Accra- Ghana</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-1/3 mt-4 bg-green-700"></div>
+        <div className="lg:w-1/3 mt-4 lg:flex hidden"></div>
       </section>
-      <section className="px-20">
+      <section className="lg:px-20 px-8">
         <div>
           <h1 className="text-xl mb-4">
             <b>Similar</b> offers
@@ -276,13 +274,10 @@ function PartDetailPage() {
           <div className="w-72">
             <PartHoverText />
           </div>
-          <div className="w-72">
-            <PartHoverText />
-          </div>
         </div>
       </section>
     </div>
   );
 }
 
-export default PartDetailPage;
+export default CarDetailPage;

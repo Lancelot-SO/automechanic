@@ -2,6 +2,7 @@ import React from "react";
 import { FaLocationDot, FaShareNodes } from "react-icons/fa6";
 import { IoMdArrowDropright } from "react-icons/io";
 import { GiRotaryPhone } from "react-icons/gi";
+import { ImLocation2 } from "react-icons/im";
 import ImageHoverText from "@/app/components/ImageHoverText";
 import LoanCalculator from "@/app/components/LoanCalculator";
 
@@ -43,7 +44,7 @@ function CarDetailPage() {
   return (
     <div>
       <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
-        <div className="flex px-20 flex-col pt-4">
+        <div className="flex px-8 lg:px-20 flex-col pt-4">
           <h1 className="text-2xl font-bold">Sell your vehicle</h1>
           <div className="flex flex-row pt-2">
             <small>
@@ -58,7 +59,7 @@ function CarDetailPage() {
               </a>
             </small>
           </div>
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-row items-center gap-4 justify-between">
             <div className="flex flex-row gap-2">
               <a
                 href="/"
@@ -68,7 +69,7 @@ function CarDetailPage() {
               </a>
               <a
                 href="/"
-                className="flex items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-gray-500 text-white rounded-sm drop-shadow-md"
+                className="lg:flex hidden items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-gray-500 text-white rounded-sm drop-shadow-md"
               >
                 <FaLocationDot />
                 Vehicle location
@@ -77,7 +78,7 @@ function CarDetailPage() {
             <div className="flex flex-row gap-2 mr-24">
               <a
                 href="/"
-                className="flex items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-gray-500 hover:bg-[#F88220] text-white rounded-sm drop-shadow-md"
+                className="lg:flex hidden items-center justify-center w-40 h-10 font-bold mt-6 gap-1 bg-gray-500 hover:bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
                 <FaShareNodes />
                 Click to share
@@ -92,14 +93,14 @@ function CarDetailPage() {
           </div>
         </div>
       </div>
-      <section className="  border-b-2 mt-2  flex flex-row">
-        <div className="w-1/2  px-20">
+      <section className="  border-b-2 mt-2  flex flex-col lg:flex-row">
+        <div className="lg:w-1/2 px-8 lg:px-20">
           <img
             src="/images/mercedes_picture.jpg"
             alt="mercedes"
             className="w-3/3 h-82 pt-4 mb-2"
           />
-          <div className="flex flex-row px-8 gap-4">
+          <div className="flex flex-row lg:px-8 gap-4">
             <img
               src="/images/mercedes_picture.jpg"
               alt="mercedes"
@@ -118,16 +119,16 @@ function CarDetailPage() {
             <img
               src="/images/mercedes_picture.jpg"
               alt="mercedes"
-              className="w-24 h-20 py-4 rounded-md"
+              className="w-24 h-20 py-4 rounded-md lg:flex hidden"
             />
             <img
               src="/images/mercedes_picture.jpg"
               alt="mercedes"
-              className="w-24 h-20 py-4 rounded-md"
+              className="w-24 h-20 py-4 rounded-md lg:flex hidden"
             />
           </div>
         </div>
-        <div className="w-1/2 flex flex-col">
+        <div className="lg:w-1/2 px-8 lg:px-0 flex flex-col">
           <div className="flex flex-row pt-4 mb-2">
             <h1 className="text-[#F88220] font-bold text-3xl">54.980 GHS</h1>
             <small className="mt-1">*Price Negotiable</small>
@@ -160,8 +161,8 @@ function CarDetailPage() {
           </div>
         </div>
       </section>
-      <section className=" mt-2 flex flex-row">
-        <div className="w-2/3 px-20 mt-4 flex-col flex">
+      <section className=" mt-2 flex flex-col lg:flex-row">
+        <div className="lg:w-2/3 px-8 lg:px-20 mt-4 flex-col flex">
           <div className="border-b-2 pb-4">
             <h1 className="text-xl">
               <b>Vehicle</b> information
@@ -208,12 +209,12 @@ function CarDetailPage() {
             </p>
           </div>
         </div>
-        <div className="w-1/3 mt-4 mr-20">
+        <div className="lg:w-1/3 px-8 lg:px-0 mt-4 lg:mr-20">
           <LoanCalculator />
         </div>
       </section>
       <section>
-        <div className="w-2/3 px-20 mt-4 flex-col flex mb-12">
+        <div className="lg:w-2/3 px-8 lg:px-20 mt-4 flex-col flex mb-12">
           <div className="border-b-2 pb-20">
             <h1 className="text-xl">
               <b>Contact</b> details
@@ -224,7 +225,7 @@ function CarDetailPage() {
             </p>
 
             <div className="flex flex-col my-4 text-gray-500">
-              <div className="flex flex-row mb-6 justify-between pr-38">
+              <div className="flex flex-col lg:flex-row mb-6 justify-between pr-38 gap-4 lg:gap-0">
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
                     <GiRotaryPhone className="text-white" size={30} />
@@ -233,12 +234,12 @@ function CarDetailPage() {
                 </div>
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
-                    <GiRotaryPhone className="text-white" size={30} />
+                    <ImLocation2 className="text-white" size={30} />
                   </div>
                   <span className="ml-2">Spintex, Accra- Ghana </span>
                 </div>
               </div>
-              <div className="flex flex-row justify-between pr-38">
+              <div className="flex flex-col lg:flex-row justify-between pr-38 gap-4 lg:gap-0">
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
                     <GiRotaryPhone className="text-white" size={30} />
@@ -247,19 +248,17 @@ function CarDetailPage() {
                 </div>
                 <div className="flex flex-row items-center gap-4">
                   <div className="flex bg-[#F88220] w-10 h-10 rounded-md items-center justify-center ">
-                    <GiRotaryPhone className="text-white" size={30} />
+                    <ImLocation2 className="text-white" size={30} />
                   </div>
-                  <span className="ml-2">
-                    Berlin, Germany, nr. 250330, main street
-                  </span>
+                  <span className="ml-2">Spintex, Accra- Ghana</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-1/3 mt-4 bg-green-700"></div>
+        <div className="lg:w-1/3 mt-4 lg:flex hidden"></div>
       </section>
-      <section className="px-20">
+      <section className="lg:px-20 px-8">
         <div>
           <h1 className="text-xl mb-4">
             <b>Similar</b> offers
@@ -275,7 +274,7 @@ function CarDetailPage() {
           <div className="w-72">
             <ImageHoverText />
           </div>
-          <div className="w-72">
+          <div className="w-72 lg:flex hidden">
             <ImageHoverText />
           </div>
         </div>
