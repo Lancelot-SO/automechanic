@@ -2,14 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { PowerIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import {
-  FaCarSide,
-  FaMotorcycle,
-  FaTruck,
-  FaGears,
-  FaBars,
-} from "react-icons/fa6";
-import { FaSearch, FaTimes } from "react-icons/fa";
+import { FaCarSide, FaMotorcycle, FaTruck, FaGears } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
 import { GiMechanicGarage } from "react-icons/gi";
 import { usePathname, useRouter } from "next/navigation";
 
@@ -71,12 +65,14 @@ function NavBar() {
               AutoMarket
             </Link>
 
-            <div className='flex flex-row divide-solid divide-[#575757] items-center   '>
-              <div className='text-[#A5A2A5] uppercase text-md  px-5 flex-none hidden xl:inline-block sm:border-l sm:border-gray-500 sm:border-1 '>
+            <div className='flex flex-row divide-solid divide-[#575757] items-center'>
+              <div className='text-[#A5A2A5] uppercase text-md  px-5 flex-none hidden lg:inline-block sm:border-l sm:border-gray-500 sm:border-1 '>
                 This is a title
               </div>
+            </div>
+            <div className='sm:items-center sm:pl-[4rem] pl-0 flex-none'>
               <Link
-                className='text-[#B4BCBC] text-base font-bold pr-4 flex-none  sm:border-gray-500 sm:border-r'
+                className='text-[#B4BCBC] text-base font-bold sm:px-4 px-0  flex-none  sm:border-gray-500 sm:border-r sm:border-l'
                 href='/dealer'
               >
                 Dealer Name
@@ -153,7 +149,7 @@ function NavBar() {
                 <div className='hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-[#414141] sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5'>
                   <Link
                     className='flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300'
-                    href=''
+                    href='/'
                   >
                     Home Page
                   </Link>
@@ -165,7 +161,7 @@ function NavBar() {
                   </Link>
                   <Link
                     className='flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300'
-                    href='auth/login'
+                    href='/auth/login'
                   >
                     Login Page
                   </Link>
@@ -385,125 +381,6 @@ function NavBar() {
                   </button>
                 </div>
               </div>
-              <div
-                onClick={() => setNav(!nav)}
-                className='cursor-pointer z-10 lg:hidden mb-4'
-              >
-                {nav ? <FaTimes /> : <FaBars />}
-              </div>
-              {nav && (
-                <ul className='absolute text-[#BCBCBC] pt-1 group-hover/main:block lg:w-24 lg:ml-[-94px] ml-[-150px]  divide-y-2 divide-solid divide-[#575757]  z-10'>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/'
-                    >
-                      Home Page
-                    </Link>
-                  </li>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/offer/new'
-                    >
-                      Add an Offer
-                    </Link>
-                  </li>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/Auth/login'
-                    >
-                      Login page
-                    </Link>
-                  </li>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/product/car'
-                    >
-                      Car list
-                    </Link>
-                    <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
-                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[128px] group-hover/item:block top-0 left-[180px]'>
-                      <li>
-                        <Link
-                          className='rounded-t py-2  flex flex-col w-full'
-                          href='/product/car'
-                        >
-                          Car Detail
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/dealer_page'
-                    >
-                      Dealer page
-                    </Link>
-                  </li>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/manufucturer'
-                    >
-                      manufucturer
-                    </Link>
-                    <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
-                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[213px] group-hover/item:block top-0 left-[180px]'>
-                      <li>
-                        <Link
-                          className='rounded-t py-2  flex flex-col w-full '
-                          href='/manufucturer/1'
-                        >
-                          list
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2 flex flex-row'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/dealer'
-                    >
-                      Dealer
-                    </Link>
-
-                    <ChevronRightIcon className='h-6 w-6 text-[#BCBCBC] pr-1 self-center' />
-                    <ul className='absolute hidden l-10 bg-[#414141] hover:text-white w-[150px] px-2 my-[255px] group-hover/item:block top-0 left-[180px]'>
-                      <li>
-                        <Link
-                          className='rounded-t py-2  flex flex-col w-full '
-                          href='/dealer'
-                        >
-                          Dealer Detail
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/manufucturer_form'
-                    >
-                      Manufucturer Form
-                    </Link>
-                  </li>
-                  <li className='group/item  bg-[#414141] hover:text-white w-[180px] px-2'>
-                    <Link
-                      className='rounded-t py-2 px-2 flex flex-col w-full'
-                      href='/contact'
-                    >
-                      contact
-                    </Link>
-                  </li>
-                </ul>
-              )}
             </div>
           </form>
         </nav>
