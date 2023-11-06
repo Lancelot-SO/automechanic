@@ -47,13 +47,13 @@ function Carousel() {
       >
         <div
           id='slide1'
-          className='carousel-item relative w-full flex flex-col justify-center'
+          className='carousel-item relative w-full flex flex-col justify-center '
           style={{ scrollSnapAlign: "start" }}
         >
           <img
             src='/images/mercedes_full.jpg'
             alt='mercedes'
-            className='w-full rounded-md  sm:h-[40rem] h-[30rem] '
+            className='w-full rounded-md  sm:h-[40rem] h-[20rem]'
           />
           <div className='absolute flex justify-between transform -translate-y-1/2 left-1 right-1 top-1/2'>
             <button
@@ -84,7 +84,7 @@ function Carousel() {
           <img
             src='/images/mercedes_picture.jpg'
             alt='Burger'
-            className='w-full rounded-md sm:h-[40rem] h-[30rem] '
+            className='w-full rounded-md sm:h-[40rem] h-[20rem] '
           />
           <div className='absolute flex justify-between transform -translate-y-1/2 left-1 right-1 top-1/2'>
             <button

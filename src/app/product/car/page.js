@@ -50,7 +50,7 @@ function CarListPage() {
             <div className='col-span-4'>
               {/* layer one */}
               <div className='flex flex-row justify-between'>
-                <div className='flex flex-row space-x-2'>
+                <div className='flex flex-row space-x-2 md:pl-8 pl-0'>
                   <div>
                     <select
                       name='sort_by'
@@ -92,7 +92,7 @@ function CarListPage() {
                 <hr className='w-full ' />
               </div>
               {/* layer two  */}
-              <div className='sm:w-full w-[90%]'>
+              <div className='sm:w-full   w-[90%]'>
                 {listDisplay ? (
                   <div>{listRender(12)}</div>
                 ) : (

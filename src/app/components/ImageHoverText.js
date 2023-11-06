@@ -1,12 +1,12 @@
+import Link from "next/link";
 import React from "react";
-
 function ImageHoverText() {
   return (
     <div className='flex items-center justify-center mt-2 rounded-md flex-col'>
-      <a className='relative block group w-full' href='/product/car/2'>
-        <div className='w-20 h-[3.2rem]'>
+      <Link className='relative block group w-full' href='/product/car/2'>
+        <div className='w-24 h-[3.2rem]'>
           <img
-            className='absolute inset-0 m:object-cover  w-full h-[10.85rem]  group-hover:opacity-50 rounded-t-md'
+            className='absolute inset-0 m:object-cover  w-full sm:h-[10.85rem] h-[12rem]  group-hover:opacity-50 rounded-t-md'
             src='/images/mercedes_picture.jpg'
           />
         </div>
@@ -22,7 +22,7 @@ function ImageHoverText() {
                rounded-t-md
               '
             >
-              <div className='relative flex flex-col w-full text-md h-[10.85rem] py-4 px-2 text-[#B7B8B8] space-y-2 mt-[-3.2rem]'>
+              <div className='relative flex flex-col w-full sm:text-md text-sm sm:h-[10.85rem] h-[12rem] py-2 px-2 text-[#B7B8B8] space-y-0 mt-[-3.2rem]'>
                 <p className=' '>Registration 2002</p>
                 <p className=' '>3.0 Diesel</p>
                 <p className=' '>Body Coupe</p>
@@ -31,7 +31,7 @@ function ImageHoverText() {
             </div>
           </div>
         </div>
-      </a>
+      </Link>
       <div className='w-full flex  text-xs sm:flex-row  flex-col p-2 bg-[#414141] text-white justify-between px-3 rounded-b-md '>
         <p className=''>Mercedes-Benz 1</p>
         <p className='text-[#F88220]'>54980 GHS</p>

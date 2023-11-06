@@ -8,7 +8,7 @@ function HeroPage() {
   return (
     <div className='max-w-[85rem] mx-auto px-4 sm:px-2 lg:px-16 pb-4'>
       {/* <!-- Grid --> */}
-      <div className='grid md:grid-cols-3 gap-4 md:gap-2 xl:gap-14 md:items-center'>
+      <div className='grid md:grid-cols-3 gap-4 md:gap-2 xl:gap-16 md:items-center'>
         <div className='col-span-2'>
           <div>
             <h3 className='text-2xl pt-6 pb-2 '>
@@ -31,13 +31,15 @@ function HeroPage() {
               <BiSolidCaretUpSquare className='text-3xl text-[#CACACA] hover:text-[#F88220]' />
             </div>
           </div>
-          <ul className='flex sm:flex-row md:flex-col md:space-x-0 space-x-2 items-center sm:items-stretch '>
-            {[...Array(3)].map((_, i) => (
-              <li key={i} className='sm:w-[16rem] md:w-auto'>
-                <ImageHoverText />
-              </li>
-            ))}
-          </ul>
+          <div>
+            <ul className='flex sm:flex-row md:flex-col md:space-x-0 space-x-4 items-center sm:items-stretch'>
+              {[...Array(3)].map((_, i) => (
+                <li key={i} className='md:w-auto '>
+                  <ImageHoverText />
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
