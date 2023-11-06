@@ -19,11 +19,11 @@ const listRender = (listLength) => {
 
 function SparePareListPage() {
   const [listDisplay, setListDisplay] = useState(false);
-  const imageLength = 21;
+  const imageLength = 12;
   return (
     <div className="w-full flex flex-col  pt-6 drop-shadow-md bg-[#F7F3F7] ">
       {/* page one */}
-      <section className="w-full flex flex-col pl-20 pr-[11rem]">
+      <section className="w-full flex flex-col px-4 lg:px-0 lg:pl-20 lg:pr-[11rem]">
         <div className="flex w-full flex-col space-y-20">
           <div>
             <h2 className="text-2xl">
@@ -46,7 +46,7 @@ function SparePareListPage() {
           </div>
           <div className="flex w-full flex-row justify-between ">
             <nav>
-              <div className="space-x-2 ">
+              <div className="lg:space-x-2 ">
                 <button className="btn bg-[#F37D1A] text-white btn-sm capitalize h-[2.5rem]">
                   All Spare Parts
                 </button>
@@ -58,7 +58,7 @@ function SparePareListPage() {
                 </button>
               </div>
             </nav>
-            <div className="flex flex-row space-x-1">
+            <div className="lg:flex hidden flex-row space-x-1">
               <button
                 onClick={() => setListDisplay(!listDisplay)}
                 className={`block ${
@@ -80,17 +80,20 @@ function SparePareListPage() {
         </div>
       </section>
       {/* page two */}
-      <section className=" bg-white pl-20 pr-[11rem]">
-        <div className="flex flex-row py-8">
-          <form action="" className="flex flex-col w-1/4 space-y-8">
+      <section className=" bg-white lg:pl-20 lg:pr-[11rem]">
+        <div className="flex flex-col lg:flex-row py-8">
+          <form
+            action=""
+            className="flex flex-col lg:w-1/4 px-4 lg:px-0 space-y-8"
+          >
             <SearchFilter />
             <LoanCalculator />
           </form>
 
-          <div className="flex flex-col pl-4 w-3/4">
+          <div className="flex flex-col px-4 lg:px-0 lg:pl-4 lg:w-3/4">
             {/* layer one */}
             <div className="flex felx-row justify-between">
-              <div className="flex flex-row space-x-2">
+              <div className="flex flex-row space-x-2 pt-4 lg:pt-0">
                 <div>
                   <select
                     name="sort_by"
@@ -117,7 +120,7 @@ function SparePareListPage() {
                   </select>
                 </div>
               </div>
-              <div>
+              <div className="lg:flex hidden">
                 <div className="join space-x-2">
                   <button className="join-item btn btn-active">1</button>
                   <button className="join-item btn ">2</button>
@@ -134,9 +137,9 @@ function SparePareListPage() {
             {/* layer two  */}
             <div className="w-full">
               {listDisplay ? (
-                <div>{listRender(21)}</div>
+                <div>{listRender(12)}</div>
               ) : (
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid lg:grid-cols-3 gap-3">
                   {
                     // imageLength
 

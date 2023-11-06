@@ -18,8 +18,8 @@ function UnderConstructionPage() {
 
   return (
     <div>
-      <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
-        <div className="flex px-20 flex-col pt-4">
+      <div className="flex flex-col bg-pink-50 w-full lg:h-36 border-b-2">
+        <div className="flex px-4 lg:px-20 flex-col pt-4">
           <h1 className="text-2xl font-bold">Manufucterer Registration Form</h1>
           <div className="flex flex-row pt-2">
             <small>
@@ -56,7 +56,7 @@ function UnderConstructionPage() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 flex flex-col">
+      <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 lg:flex hidden flex-col">
         <h2 className="text-2xl mb-4">
           Register with us on <b>AutoMarket</b> and benefit from more than 1
           million potential buyers every month!
@@ -73,14 +73,14 @@ function UnderConstructionPage() {
           </li>
         </ul>
       </div>
-      <section className="flex px-20 flex-col">
+      <section className="flex px-4 lg:px-20 flex-col">
         <div>
           <h1 className="pb-4 text-2xl">
             <b>Manufacturer</b> details
           </h1>
           <form className="flex flex-col">
             <div className="border-b-2 pb-2 mb-4">
-              <div className="flex flex-row pb-2 pl-10 gap-8">
+              <div className="flex flex-col lg:flex-row pb-2 pl-10 gap-8">
                 <div className="flex flex-col">
                   <label htmlFor="companyName" className="text-xs">
                     Company Name:
@@ -115,7 +115,7 @@ function UnderConstructionPage() {
                   />
                 </div>
               </div>
-              <div className="pl-10 flex flex-row gap-8">
+              <div className="pl-10 flex flex-col lg:flex-row gap-8">
                 <div className="flex flex-col">
                   <label htmlFor="repPhone" className="text-xs">
                     Rep. Phone No.:
@@ -140,7 +140,7 @@ function UnderConstructionPage() {
               </div>
             </div>
 
-            <div className="flex flex-row gap-10">
+            <div className="flex flex-col lg:flex-row gap-10">
               <div className="flex flex-col">
                 <h1 className="pb-4 text-2xl">
                   <b>Registration</b> documents
@@ -164,8 +164,8 @@ function UnderConstructionPage() {
                 </div>
               </div>
 
-              <div className="flex flex-col pl-20">
-                <h2 className="pb-4 text-2xl pl-10">
+              <div className="flex flex-col lg:pl-20">
+                <h2 className="pb-4 text-2xl lg:pl-10">
                   <b>Brand</b> logo
                 </h2>
 
@@ -186,8 +186,8 @@ function UnderConstructionPage() {
                 </div>
               </div>
 
-              <div className="flex flex-col pl-20">
-                <h2 className="pb-4 text-2xl pl-10">
+              <div className="flex flex-col lg:pl-20">
+                <h2 className="pb-4 text-2xl lg:pl-10">
                   <b>Operating</b> Liccense{" "}
                 </h2>
 
@@ -210,7 +210,7 @@ function UnderConstructionPage() {
             </div>
 
             <div className="flex flow-row items-center justify-between">
-              <div className="flex items-center gap-2 pl-10 mb-8 mt-4">
+              <div className="flex items-center gap-2 lg:pl-10 mb-8 mt-4">
                 <input
                   type="checkbox"
                   id="abs-checkbox"
@@ -222,7 +222,7 @@ function UnderConstructionPage() {
               </div>
               <button
                 type="submit"
-                className="flex items-center mr-24 justify-center mb-8 w-28 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
+                className="flex items-center lg:mr-24 justify-center mb-8 w-28 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
                 Submit
               </button>

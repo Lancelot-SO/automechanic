@@ -21,7 +21,7 @@ function DealerDetailPage() {
   return (
     <div className="w-full flex flex-col  pt-6 drop-shadow-md bg-[#F7F3F7] ">
       {/* page one */}
-      <section className="w-full flex flex-col pl-20 pr-[11rem]">
+      <section className="w-full flex flex-col px-2 lg:pl-20 pr-[11rem]">
         <div className="flex w-full flex-col space-y-20">
           <div>
             <h2 className="text-2xl">
@@ -52,15 +52,15 @@ function DealerDetailPage() {
         </div>
       </section>
       {/* page two */}
-      <section className=" bg-white pl-20 pr-[11rem]">
-        <div className="flex flex-row py-8">
-          <form action="" className="flex flex-col w-1/4 space-y-8 ">
+      <section className=" bg-white lg:pl-20 px-4 lg:pr-[11rem]">
+        <div className="flex flex-col lg:flex-row py-8">
+          <form action="" className="flex flex-col lg:w-1/4 space-y-8 ">
             <DealerDetailAddress />
           </form>
 
-          <div className="flex flex-col  w-3/4 pl-4">
+          <div className="flex flex-col  lg:w-3/4 lg:pl-4">
             {/* layer one */}
-            <div className="flex felx-row justify-between">
+            <div className="flex felx-row mt-4 lg:mt-0 justify-between">
               <DealerImage />
             </div>
             <div className="flex flex-row justify-between  pl-10 pt-16">
