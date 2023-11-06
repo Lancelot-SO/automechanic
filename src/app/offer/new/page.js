@@ -19,8 +19,8 @@ function AddOfferPage() {
   return (
     <div>
       <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
-        <div className="flex px-20 flex-col pt-4">
-          <h1 className="text-2xl font-bold">Sell your vehicle</h1>
+        <div className="flex px-4 lg:px-20 flex-col pt-4">
+          <h1 className="text-xl lg:text-2xl font-bold">Sell your vehicle</h1>
           <div className="flex flex-row pt-2">
             <small>
               <a href="/" className="cursor-pointer text-black">
@@ -56,7 +56,7 @@ function AddOfferPage() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 flex flex-col">
+      <div className="bg-gray-100 hidden px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 lg:flex flex-col">
         <h2 className="text-2xl mb-4">
           Sell ​​your car on <b>AutoMarket</b> and benefit from more than 1
           million potential buyers every month!
@@ -73,13 +73,13 @@ function AddOfferPage() {
           </li>
         </ul>
       </div>
-      <div className="flex px-20 flex-col">
+      <div className="flex lg:px-20 flex-col">
         <h2 className="pb-4 text-2xl">
           <b>Vehicle</b> data
         </h2>
         <form className="flex flex-col">
           <div className=" border-b-2 pb-2 mb-4">
-            <div className="flex flex-row pb-2 pl-10 gap-8">
+            <div className="flex flex-col lg:flex-row pb-2 pl-10 gap-8">
               <div className="flex flex-col">
                 <label htmlFor="manufacturer" className="text-xs">
                   Manufacturer:<small className="text-red-500 text-lg">*</small>
@@ -135,7 +135,7 @@ function AddOfferPage() {
                 <select
                   id="body"
                   name="body"
-                  className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
+                  className="block w-60 mb-4 lg:mb-0 mt-1 p-1 border border-gray-200 rounded-md"
                 >
                   <option value="select">select</option>
                   <option value="option1">Option 1</option>
@@ -144,7 +144,7 @@ function AddOfferPage() {
                 </select>
               </div>
             </div>
-            <div className="flex flex-row pb-2 pl-10 gap-8">
+            <div className="flex flex-col lg:flex-row pb-2 pl-10 gap-8">
               <div className="flex flex-col">
                 <label htmlFor="fuel" className="text-xs">
                   Fuel Type:<small className="text-red-500 text-lg">*</small>
@@ -201,7 +201,7 @@ function AddOfferPage() {
                 <select
                   id="Cilindrics"
                   name="Cilindrics"
-                  className="block w-60 mt-1 p-1 border border-gray-200 rounded-md"
+                  className="block w-60 mb-4 lg:mb-0 mt-1 p-1 border border-gray-200 rounded-md"
                 >
                   <option value="select">select</option>
                   <option value="option1">Option 1</option>
@@ -210,7 +210,7 @@ function AddOfferPage() {
                 </select>
               </div>
             </div>
-            <div className="flex flex-row pb-2 pl-10 gap-8">
+            <div className="flex flex-col lg:flex-row pb-2 pl-10 gap-8">
               <div className="flex flex-col">
                 <label htmlFor="hp" className="text-xs">
                   Hp / Kw:<small className="text-red-500 text-lg">*</small>
@@ -235,7 +235,7 @@ function AddOfferPage() {
                 <input
                   id="chassis"
                   name="chassis"
-                  className="block w-96 mt-1 p-1 border border-gray-200 rounded-md"
+                  className="block w-60 lg:w-96 mt-1 p-1 border border-gray-200 rounded-md"
                 />
               </div>
 
@@ -260,9 +260,9 @@ function AddOfferPage() {
           <h2 className="pb-4 text-2xl">
             <b>Vehicle</b> equipment
           </h2>
-          <div className="flex flex-col border-b-2 mb-4">
-            <div className="flex flex-row gap-12">
-              <div className="flex items-center gap-2 pl-10">
+          <div className="flex flex-row lg:flex-col border-b-2 mb-4">
+            <div className="flex flex-col lg:flex-row gap-12">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="abs-checkbox"
@@ -272,7 +272,7 @@ function AddOfferPage() {
                   ABS
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="abs-checkbox"
@@ -282,7 +282,7 @@ function AddOfferPage() {
                   EDS
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="esp-checkbox"
@@ -292,7 +292,7 @@ function AddOfferPage() {
                   ESP
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="ac-checkbox"
@@ -302,7 +302,7 @@ function AddOfferPage() {
                   Air Conditioning
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="ac-checkbox"
@@ -312,7 +312,7 @@ function AddOfferPage() {
                   Air Conditioning
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="ac-checkbox"
@@ -323,8 +323,8 @@ function AddOfferPage() {
                 </label>
               </div>
             </div>
-            <div className="flex flex-row gap-8 pb-4">
-              <div className="flex items-center gap-2 pl-10">
+            <div className="flex flex-col lg:flex-row gap-10 lg:gap-8 lg:pb-4">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="panoramic-checkbox"
@@ -334,7 +334,7 @@ function AddOfferPage() {
                   Panoramic roof
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="abs-checkbox"
@@ -344,7 +344,7 @@ function AddOfferPage() {
                   Protection framework
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="esp-checkbox"
@@ -354,7 +354,7 @@ function AddOfferPage() {
                   Tow
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="ac-checkbox"
@@ -364,7 +364,7 @@ function AddOfferPage() {
                   Traction control
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="ac-checkbox"
@@ -374,7 +374,7 @@ function AddOfferPage() {
                   Board computer
                 </label>
               </div>
-              <div className="flex items-center gap-2 pl-10">
+              <div className="flex items-center gap-2 pl-6 lg:pl-10">
                 <input
                   type="checkbox"
                   id="ac-checkbox"
@@ -390,7 +390,7 @@ function AddOfferPage() {
           <h2 className="pb-4 text-2xl">
             <b>Vehicle</b> description
           </h2>
-          <div className="pl-10 flex flex-col border-b-2">
+          <div className="pl-6 lg:pl-10 flex flex-col border-b-2">
             <label htmlFor="technical" className="text-xs">
               Some text:
             </label>
@@ -399,13 +399,13 @@ function AddOfferPage() {
               name="desc"
               rows="8"
               cols="50"
-              className="border-2 mr-64 mb-6"
+              className="border-2 lg:mr-64 mb-6 w-60 lg:w-96"
             ></textarea>
           </div>
           <h2 className="pb-4 text-2xl">
             <b>Vehicle</b> Registration
           </h2>
-          <div className="flex flex-row gap-8 pl-10 border-b-2 mb-4 pb-4">
+          <div className="flex flex-col lg:flex-row gap-8 pl-6 lg:pl-10 border-b-2 mb-4 pb-4">
             <div className="flex flex-col">
               <label htmlFor="origin" className="text-xs">
                 Country of Origin:
@@ -478,7 +478,7 @@ function AddOfferPage() {
           <h2 className="pb-4 text-2xl">
             <b>Vehicle</b> condition
           </h2>
-          <div className="flex flex-row gap-8 pl-10 border-b-2 mb-4 pb-4">
+          <div className="flex flex-col lg:flex-row gap-8 pl-6 lg:pl-10 border-b-2 mb-4 pb-4">
             <div className="flex flex-col">
               <label htmlFor="technical" className="text-xs">
                 Technical condition:
@@ -541,7 +541,7 @@ function AddOfferPage() {
           <h2 className="pb-4 text-2xl">
             <b>Vehicle</b> price
           </h2>
-          <div className="flex flex-row gap-8 pl-10 border-b-2 mb-4 pb-4">
+          <div className="flex flex-col lg:flex-row gap-8 pl-6 lg:pl-10 border-b-2 mb-4 pb-4">
             <div className="flex flex-col">
               <label htmlFor="price" className="text-xs">
                 Price:
@@ -584,7 +584,7 @@ function AddOfferPage() {
           <h2 className="pb-4 text-2xl">
             <b>Vehicle</b> photos
           </h2>
-          <div className="flex flex-row pl-10 border-b-2 mb-4 pb-4 gap-5">
+          <div className="flex flex-col lg:flex-row pl-12 lg:pl-10 border-b-2 mb-4 pb-4 gap-5">
             <div
               className="w-40 h-36 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
               onClick={handleUploadClick}
@@ -613,60 +613,61 @@ function AddOfferPage() {
               <span className="text-white">UPLOAD A PHOTO</span>
             </div>
 
-            <div
-              className="w-40 h-36 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
-              onClick={handleUploadClick}
-            >
-              <input
-                type="file"
-                ref={fileInputRef}
-                style={{ display: "none" }}
-                onChange={handleFileChange}
-              />
-              <PiUploadSimpleBold className="text-white" size={30} />
-              <span className="text-white">UPLOAD A PHOTO</span>
-            </div>
+            <div className="lg:flex hidden lg:gap-5">
+              <div
+                className="w-40 h-36 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
+                onClick={handleUploadClick}
+              >
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  style={{ display: "none" }}
+                  onChange={handleFileChange}
+                />
+                <PiUploadSimpleBold className="text-white" size={30} />
+                <span className="text-white">UPLOAD A PHOTO</span>
+              </div>
+              <div
+                className="w-40 h-30 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
+                onClick={handleUploadClick}
+              >
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  style={{ display: "none" }}
+                  onChange={handleFileChange}
+                />
+                <PiUploadSimpleBold className="text-white" size={30} />
+                <span className="text-white">UPLOAD A PHOTO</span>
+              </div>
 
-            <div
-              className="w-40 h-30 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
-              onClick={handleUploadClick}
-            >
-              <input
-                type="file"
-                ref={fileInputRef}
-                style={{ display: "none" }}
-                onChange={handleFileChange}
-              />
-              <PiUploadSimpleBold className="text-white" size={30} />
-              <span className="text-white">UPLOAD A PHOTO</span>
-            </div>
+              <div
+                className="w-40 h-36 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
+                onClick={handleUploadClick}
+              >
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  style={{ display: "none" }}
+                  onChange={handleFileChange}
+                />
+                <PiUploadSimpleBold className="text-white" size={30} />
+                <span className="text-white">UPLOAD A PHOTO</span>
+              </div>
 
-            <div
-              className="w-40 h-36 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
-              onClick={handleUploadClick}
-            >
-              <input
-                type="file"
-                ref={fileInputRef}
-                style={{ display: "none" }}
-                onChange={handleFileChange}
-              />
-              <PiUploadSimpleBold className="text-white" size={30} />
-              <span className="text-white">UPLOAD A PHOTO</span>
-            </div>
-
-            <div
-              className="w-40 h-36 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
-              onClick={handleUploadClick}
-            >
-              <input
-                type="file"
-                ref={fileInputRef}
-                style={{ display: "none" }}
-                onChange={handleFileChange}
-              />
-              <PiUploadSimpleBold className="text-white" size={30} />
-              <span className="text-white">UPLOAD A PHOTO</span>
+              <div
+                className="w-40 h-36 bg-zinc-400 flex items-center justify-center flex-col rounded-md cursor-pointer"
+                onClick={handleUploadClick}
+              >
+                <input
+                  type="file"
+                  ref={fileInputRef}
+                  style={{ display: "none" }}
+                  onChange={handleFileChange}
+                />
+                <PiUploadSimpleBold className="text-white" size={30} />
+                <span className="text-white">UPLOAD A PHOTO</span>
+              </div>
             </div>
           </div>
 
@@ -674,7 +675,7 @@ function AddOfferPage() {
             <b>Seller</b> details
           </h2>
           <div className=" border-b-2 pb-2 mb-4">
-            <div className="flex flex-row pb-2 pl-10 gap-8">
+            <div className="flex flex-col lg:flex-row pb-2 pl-6 lg:pl-10 gap-8">
               <div className="flex flex-col">
                 <label htmlFor="name" className="text-xs">
                   Name:<small className="text-red-500 text-lg">*</small>
@@ -719,7 +720,7 @@ function AddOfferPage() {
                 />
               </div>
             </div>
-            <div className="flex flex-row pb-2 pl-10 gap-8">
+            <div className="flex flex-col lg:flex-row pb-2 pl-6 lg:pl-10 gap-8">
               <div className="flex flex-col">
                 <label htmlFor="country" className="text-xs">
                   Country:<small className="text-red-500 text-lg">*</small>
@@ -779,7 +780,7 @@ function AddOfferPage() {
             <b>Vehicle</b> Condition
           </h2>
           <div className="flex flex-row border-b-2 pb-2 mb-4">
-            <div className="flex items-center gap-2 pl-10 mb-8 mt-4">
+            <div className="flex items-center gap-2 pl-6 lg:pl-10 mb-8 mt-4">
               <input
                 type="radio"
                 id="condition"
@@ -802,7 +803,7 @@ function AddOfferPage() {
           </div>
 
           <div className="flex flow-row items-center justify-between">
-            <div className="flex items-center gap-2 pl-10 mb-8 mt-4">
+            <div className="flex items-center gap-2 pl-6 lg:pl-10 mb-8 mt-4">
               <input
                 type="checkbox"
                 id="abs-checkbox"

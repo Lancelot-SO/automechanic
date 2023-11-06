@@ -19,12 +19,12 @@ const listRender = (listLength) => {
 
 function CarListPage() {
   const [listDisplay, setListDisplay] = useState(false);
-  const imageLength = 21;
+  const imageLength = 12;
   return (
     <div className="w-full flex flex-col  pt-6 drop-shadow-md bg-[#F7F3F7] ">
       {/* page one */}
-      <section className="w-full flex flex-col pl-20 pr-[11rem]">
-        <div className="flex w-full flex-col space-y-20">
+      <section className="w-full flex flex-row lg:flex-col lg:pl-20 pr-[11rem]">
+        <div className="flex lg:w-full flex-col space-y-20">
           <div>
             <h2 className="text-2xl">
               <strong>Mercedes-Benz</strong> CLS 320
@@ -40,14 +40,14 @@ function CarListPage() {
                 <li>
                   <a href="">Mercedes-Benz</a>
                 </li>
-                <li>Mercedes-Benz CLS 320</li>
+                <li className="hidden lg:flex">Mercedes-Benz CLS 320</li>
               </ul>
             </div>
           </div>
           <div className="flex w-full flex-row justify-between ">
             <nav>
               <div className="space-x-2 ">
-                <button className="btn bg-[#F37D1A] text-white btn-sm capitalize h-[2.5rem]">
+                <button className="btn bg-[rgb(243,125,26)] text-white btn-sm capitalize h-[2.5rem]">
                   All Cars
                 </button>
                 <button className="btn  text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]">
@@ -58,7 +58,7 @@ function CarListPage() {
                 </button>
               </div>
             </nav>
-            <div className="flex flex-row space-x-1">
+            <div className="hidden lg:flex flex-row space-x-1">
               <button
                 onClick={() => setListDisplay(!listDisplay)}
                 className={`block ${
@@ -80,17 +80,20 @@ function CarListPage() {
         </div>
       </section>
       {/* page two */}
-      <section className=" bg-white pl-20 pr-[11rem]">
-        <div className="flex flex-row py-8">
-          <form action="" className="flex flex-col w-1/4 space-y-8">
+      <section className=" bg-white lg:pl-20 pr-[11rem]">
+        <div className="flex flex-col lg:flex-row py-8">
+          <form
+            action=""
+            className="flex flex-col w-70 lg:w-1/4 space-y-8 px-4 lg:px-0"
+          >
             <SearchFilter />
             <LoanCalculator />
           </form>
 
           <div className="flex flex-col pl-4 w-3/4">
             {/* layer one */}
-            <div className="flex felx-row justify-between">
-              <div className="flex flex-row space-x-2">
+            <div className="flex flex-row justify-between">
+              <div className="flex flex-row space-x-2 mt-2 lg:mt-0">
                 <div>
                   <select
                     name="sort_by"
@@ -118,7 +121,7 @@ function CarListPage() {
                 </div>
               </div>
               <div>
-                <div className="join space-x-2">
+                <div className="lg:flex hidden join space-x-2">
                   <button className="join-item btn btn-active">1</button>
                   <button className="join-item btn ">2</button>
                   <button className="join-item btn ">3</button>
@@ -134,9 +137,9 @@ function CarListPage() {
             {/* layer two  */}
             <div className="w-full">
               {listDisplay ? (
-                <div>{listRender(21)}</div>
+                <div>{listRender(12)}</div>
               ) : (
-                <div className="grid grid-cols-3 gap-3">
+                <div className="grid px-4 lg:px-0 lg:grid-cols-3 lg:gap-3">
                   {
                     // imageLength
 
@@ -150,7 +153,7 @@ function CarListPage() {
             </div>
             {/* layer three */}
 
-            <div className="join space-x-2 self-end">
+            <div className="join space-x-2 lg:self-end lg:mr-0 mr-16">
               <button className="join-item btn btn-active ">1</button>
               <button className="join-item btn ">2</button>
               <button className="join-item btn ">3</button>
