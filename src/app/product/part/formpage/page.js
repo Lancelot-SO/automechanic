@@ -297,7 +297,7 @@ function FormPage() {
               </div>
               <button
                 type="submit"
-                className="flex items-center mr-24 justify-center mb-8 w-28 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
+                className="flex items-center lg:mr-24 justify-center mb-8 w-28 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
                 Submit
               </button>
