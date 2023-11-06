@@ -6,7 +6,7 @@ const page = () => {
     <div>
       {" "}
       <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
-        <div className="flex px-20 flex-col pt-4">
+        <div className="flex px-8 lg:px-20 flex-col pt-4">
           <h1 className="text-2xl font-bold">Add buyer details</h1>
           <div className="flex flex-row pt-2">
             <small>
@@ -43,7 +43,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 flex flex-col">
+      <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 lg:flex flex-col hidden">
         <h2 className="text-2xl mb-4">
           Buy ​​your vehicle parts on <b>AutoMarket</b> and benefit from more
           than 1 million potential buyers every month!
@@ -60,12 +60,12 @@ const page = () => {
           </li>
         </ul>
       </div>
-      <h2 className="pb-4 text-2xl px-20">
+      <h2 className="pb-4 text-2xl lg:px-20 px-8">
         <b>Buyer</b> details
       </h2>
-      <form className="flex flex-col px-20">
-        <div className=" border-b-2 pb-2 mb-4">
-          <div className="flex flex-row pb-2 pl-10 gap-8">
+      <form className="flex flex-col px-4 lg:px-20">
+        <div className="flex flex-col border-b-2 pb-2 mb-4">
+          <div className="lg:flex flex-row  pb-2 pl-10 gap-8">
             <div className="flex flex-col">
               <label htmlFor="name" className="text-xs">
                 Name:<small className="text-red-500 text-lg">*</small>
@@ -110,7 +110,8 @@ const page = () => {
               />
             </div>
           </div>
-          <div className="flex flex-row pb-2 pl-10 gap-8">
+
+          <div className="flex flex-col lg:flex-row pb-2 pl-10 gap-8">
             <div className="flex flex-col">
               <label htmlFor="country" className="text-xs">
                 Country:<small className="text-red-500 text-lg">*</small>
@@ -180,7 +181,7 @@ const page = () => {
           </div>
           <button
             type="submit"
-            className="flex items-center mr-24 justify-center mb-8 w-28 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
+            className="flex items-center lg:mr-24 justify-center mb-8 w-28 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
           >
             Submit
           </button>
