@@ -30,10 +30,13 @@ function Carousel() {
     }
   };
   return (
-    <div className="carousel w-full rounded-md" style={{ overflowX: "scroll" }}>
+    <div
+      className='carousel w-full rounded-md '
+      style={{ overflowX: "scroll" }}
+    >
       <div
         ref={sliderRef}
-        className="carousel-container"
+        className='carousel-container'
         style={{
           display: "flex",
           scrollSnapType: "x mandatory",
@@ -43,64 +46,64 @@ function Carousel() {
         }}
       >
         <div
-          id="slide1"
-          className="carousel-item relative w-full flex flex-col justify-center"
+          id='slide1'
+          className='carousel-item relative w-full flex flex-col justify-center'
           style={{ scrollSnapAlign: "start" }}
         >
           <img
-            src="/images/mercedes_full.jpg"
-            alt="Burger"
-            className="w-full rounded-md"
+            src='/images/mercedes_full.jpg'
+            alt='mercedes'
+            className='w-full rounded-md  sm:h-[40rem] h-[30rem] '
           />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-1 right-1 top-1/2">
+          <div className='absolute flex justify-between transform -translate-y-1/2 left-1 right-1 top-1/2'>
             <button
-              className="bg-white w-10 h-10 rounded-md hover:bg-[#F88220] transition duration-300 ease-in-out"
+              className='bg-white w-10 h-10 rounded-md hover:bg-[#F88220] transition duration-300 ease-in-out'
               onClick={leftClickHandler}
             >
               ❮
             </button>
             <button
-              className="bg-white w-10 h-10 rounded-md hover:bg-[#F88220] transition duration-300 ease-in-out"
+              className='bg-white w-10 h-10 rounded-md hover:bg-[#F88220] transition duration-300 ease-in-out'
               onClick={rightClickHandler}
             >
               ❯
             </button>
           </div>
-          <div className="relative mt-[-3rem]">
-            <div className="flex flex-row justify-between bg-[#414141] text-2xl py-2 px-4">
-              <p className="text-white">Mercedes-Benz CLS 630</p>
-              <p className="text-[#F88220]">54980 GHS</p>
+          <div className='relative mt-[-3rem]'>
+            <div className='flex sm:flex-row flex-col justify-between bg-[#414141] text-2xl py-2 px-4'>
+              <p className='text-white'>Mercedes-Benz CLS 630</p>
+              <p className='text-[#F88220]'>54980 GHS</p>
             </div>
           </div>
         </div>
         <div
-          id="slide2"
-          className="carousel-item relative w-full flex flex-col justify-center"
+          id='slide2'
+          className='carousel-item relative w-full flex flex-col justify-center'
           style={{ scrollSnapAlign: "start" }}
         >
           <img
-            src="/images/mercedes_picture.jpg"
-            alt="Burger"
-            className="w-full rounded-md"
+            src='/images/mercedes_picture.jpg'
+            alt='Burger'
+            className='w-full rounded-md sm:h-[40rem] h-[30rem] '
           />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-1 right-1 top-1/2">
+          <div className='absolute flex justify-between transform -translate-y-1/2 left-1 right-1 top-1/2'>
             <button
-              className="bg-white w-10 h-10 rounded-md hover:bg-[#F88220] transition duration-300 ease-in-out "
+              className='bg-white w-10 h-10 rounded-md hover:bg-[#F88220] transition duration-300 ease-in-out '
               onClick={leftClickHandler}
             >
               ❮
             </button>
             <button
-              className="bg-white w-10 h-10 rounded-md hover:bg-[#F88220] transition duration-300 ease-in-out"
+              className='bg-white w-10 h-10 rounded-md hover:bg-[#F88220] transition duration-300 ease-in-out'
               onClick={rightClickHandler}
             >
               ❯
             </button>
           </div>
-          <div className="relative mt-[-3rem]">
-            <div className="flex flex-row justify-between bg-[#414141] text-2xl py-2 px-4">
-              <p className="text-white">Mercedes-Benz CLS 630</p>
-              <p className="text-[#F88220]">54980 Euro</p>
+          <div className='relative mt-[-3rem]'>
+            <div className='flex sm:flex-row flex-col justify-between bg-[#414141] text-2xl py-2 px-4'>
+              <p className='text-white'>Mercedes-Benz CLS 630</p>
+              <p className='text-[#F88220]'>54980 Euro</p>
             </div>
           </div>
         </div>
