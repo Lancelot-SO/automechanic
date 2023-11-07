@@ -19,6 +19,38 @@ const listRender = (listLength) => {
 
 function CarListPage() {
   const [listDisplay, setListDisplay] = useState(false);
+  const [activeButtonIndex, setActiveButtonIndex] = useState(0);
+  const breadcrumbs = [
+    { text: "Home", link: "/" },
+    { text: "Cars", link: "/cars" },
+    { text: "Mercedes-Benz", link: "/mercedes" },
+    { text: "Mercedes-Benz CLS 320" },
+  ];
+  const ListButtonTexts = ["Click to share", "Purchase Vehicle"];
+  const buttons = [
+    {
+      text: "All Cars",
+      active: true,
+      onClick: () => {
+        setActiveButtonIndex(0);
+      },
+    },
+    {
+      text: "New Cars",
+      active: false,
+      onClick: () => {
+        setActiveButtonIndex(1);
+      },
+    },
+    {
+      text: "Used Cars",
+      active: false,
+      onClick: () => {
+        setActiveButtonIndex(2);
+      },
+    },
+  ];
+
   const imageLength = 12;
   return (
     <div>
@@ -26,8 +58,12 @@ function CarListPage() {
         <div className='max-w-[85rem] mx-auto px-2 lg:px-14 pb-4 pt-4'>
           {/* page one */}
           <Navigator
+            title='Mercedes-Benz CLS 320'
+            breadcrumbs={breadcrumbs}
+            buttons={buttons}
             listDisplay={listDisplay}
             setListDisplay={setListDisplay}
+            activeButtonIndex={activeButtonIndex}
           />
         </div>
       </div>

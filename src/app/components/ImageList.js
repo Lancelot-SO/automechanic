@@ -34,10 +34,10 @@ function ImageList() {
           </div>
           <div className='flex flex-row text-xs justify-between'>
             <p>Location: Spintex, Ghana</p>
-            <a href=''>
+            <Link href=''>
               View Details{" "}
               <FaLongArrowAltRight className='inline-block w-4 h-4 pl-1 text-[#F88220]' />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
