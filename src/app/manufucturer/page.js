@@ -139,7 +139,7 @@ function ManufucturerPage() {
               </div>
             </div>
             <div className="pt-8 pb-2">
-              <hr className="w-full " />
+              <hr className="lg:w-full px-8 lg:px-0" />
             </div>
             {/* layer two  */}
             <div className="w-full">
