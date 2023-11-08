@@ -5,7 +5,7 @@ function NechanicPage() {
   return (
     <div>
       <div className="flex flex-col bg-pink-50 w-full h-36 border-b-2">
-        <div className="flex px-20 flex-col pt-4">
+        <div className="flex px-8 lg:px-20 flex-col pt-4">
           <h1 className="text-2xl font-bold">Our repair services</h1>
           <div className="flex flex-row pt-2">
             <small>
@@ -42,7 +42,7 @@ function NechanicPage() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 flex flex-col">
+      <div className="bg-gray-100 px-8 h-50 mr-44  ml-20 py-4 pr-12 my-6 lg:flex flex-col hidden">
         <h2 className="text-2xl mb-4">
           Order ​​your mechanic on <b>AutoMarket</b> and benefit from more than
           1 million potential buyers every month!
@@ -59,14 +59,14 @@ function NechanicPage() {
           </li>
         </ul>
       </div>
-      <section className="flex px-20 flex-col">
+      <section className="flex px-8 lg:px-20 flex-col">
         <div>
           <h1 className="pb-4 text-2xl">
             <b>Vehicle</b> data
           </h1>
           <form className="flex flex-col">
             <div className="border-b-2 pb-2 mb-4">
-              <div className="flex flex-row pb-2 pl-10 gap-8">
+              <div className="flex flex-col lg:flex-row pb-2 pl-10 gap-8">
                 <div className="flex flex-col">
                   <label htmlFor="manufacturer" className="text-xs">
                     Manufacturer:
@@ -176,7 +176,7 @@ function NechanicPage() {
                 name="desc"
                 rows="8"
                 cols="50"
-                className="border-2 mr-64 mb-6"
+                className="border-2 mr-64 mb-6 w-72 lg:w-96"
               ></textarea>
             </div>
 
@@ -193,7 +193,7 @@ function NechanicPage() {
               </div>
               <button
                 type="submit"
-                className="flex items-center mr-24 justify-center mb-8 w-28 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
+                className="flex items-center lg:mr-24 justify-center mb-8 w-28 h-10 font-bold mt-6  bg-[#F88220] text-white rounded-sm drop-shadow-md"
               >
                 Submit
               </button>

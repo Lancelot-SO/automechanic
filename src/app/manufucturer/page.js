@@ -23,8 +23,8 @@ function ManufucturerPage() {
   return (
     <div className="w-full flex flex-col  pt-6 drop-shadow-md bg-[#F7F3F7] ">
       {/* page one */}
-      <section className="w-full flex flex-row lg:flex-col lg:pl-20 pr-[11rem]">
-        <div className="flex lg:w-full flex-col space-y-20">
+      <section className="w-full flex flex-row lg:flex-row lg:pl-20 pr-[11rem]">
+        <div className="flex lg:w-full flex-col space-y-20 px-4 lg:px-0">
           <div>
             <h2 className="text-2xl">
               <strong>Mercedes-Benz</strong> CLS 320
@@ -44,42 +44,31 @@ function ManufucturerPage() {
               </ul>
             </div>
           </div>
-          <div className="flex w-full flex-row justify-between ">
-            <nav>
-              <div className="space-x-2 ">
-                <button className="btn bg-[#F37D1A] text-white btn-sm capitalize h-[2.5rem]">
-                  All Cars
-                </button>
-                <button className="btn  text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]">
-                  New Cars
-                </button>
-                <button className="btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]">
-                  Used Cars
-                </button>
-                <a
-                  href="/product/part"
-                  className="btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]"
-                >
-                  New Spare part
-                </a>
-                <a
-                  href="/product/part"
-                  className="btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]"
-                >
-                  Used Spare part
-                </a>
-              </div>
-            </nav>
-            <div className="hidden lg:flex flex-row space-x-1">
+          <div className="flex flex-row justify-between">
+            <div className="flex mt-16 gap-4">
+              <a
+                href="/product/car"
+                className="w-30 border p-2 btn text-white bg-[#F37D1A] btn-sm hover:bg-[#777777]"
+              >
+                All Cars
+              </a>
+              <a
+                href="/product/part"
+                className="w-30 border p-2 btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A]"
+              >
+                All Spareparts
+              </a>
+            </div>
+            <div className="flex flex-row space-x-1 mr-4 lg:mr-0">
               <a
                 href="/dealer"
-                className="btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem]"
+                className="btn text-white bg-[#777777] btn-sm hover:bg-[#F37D1A] capitalize h-[2.5rem] mt-16"
               >
                 My dealers
               </a>
               <button
                 onClick={() => setListDisplay(!listDisplay)}
-                className={`block ${
+                className={`lg:block hidden h-10 lg:mt-16  ${
                   listDisplay ? "bg-[#F88220]" : "bg-[#D6D6D6]"
                 } hover:bg-[#F37D1A] p-1 rounded-md`}
               >
@@ -87,7 +76,7 @@ function ManufucturerPage() {
               </button>
               <button
                 onClick={() => setListDisplay(!listDisplay)}
-                className={`block ${
+                className={`lg:block hidden h-10 lg:mt-16 ${
                   listDisplay ? "bg-[#D6D6D6]" : "bg-[#F88220]"
                 } p-1 rounded-sm`}
               >
@@ -98,7 +87,7 @@ function ManufucturerPage() {
         </div>
       </section>
       {/* page two */}
-      <section className=" bg-white lg:pl-20 pr-[11rem]">
+      <section className=" bg-white lg:pl-20 lg:pr-[11rem]">
         <div className="flex flex-col lg:flex-row py-8">
           <form
             action=""
@@ -108,10 +97,10 @@ function ManufucturerPage() {
             <LoanCalculator />
           </form>
 
-          <div className="flex flex-col pl-4 w-3/4">
+          <div className="flex flex-col lg:pl-4 lg:w-3/4">
             {/* layer one */}
             <div className="flex flex-row justify-between">
-              <div className="flex flex-row space-x-2 mt-2 lg:mt-0">
+              <div className="flex flex-row space-x-2 px-4 lg:px-0 mt-4 lg:mt-0">
                 <div>
                   <select
                     name="sort_by"
@@ -150,7 +139,7 @@ function ManufucturerPage() {
               </div>
             </div>
             <div className="pt-8 pb-2">
-              <hr className="w-full " />
+              <hr className="lg:w-full px-8 lg:px-0" />
             </div>
             {/* layer two  */}
             <div className="w-full">
@@ -171,7 +160,7 @@ function ManufucturerPage() {
             </div>
             {/* layer three */}
 
-            <div className="join space-x-2 lg:self-end lg:mr-0 mr-16">
+            <div className="join space-x-2 lg:self-end lg:mr-0 mr-16 px-8 lg:px-8">
               <button className="join-item btn btn-active ">1</button>
               <button className="join-item btn ">2</button>
               <button className="join-item btn ">3</button>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { GiRotaryPhone } from "react-icons/gi";
+import { ImLocation2 } from "react-icons/im";
 import ImageHoverText from "@/app/components/ImageHoverText";
 import LoanCalculator from "@/app/components/LoanCalculator";
 import NavigatorCommon from "@/app/components/NavigatorCommon";
