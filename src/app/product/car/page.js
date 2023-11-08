@@ -135,7 +135,7 @@ function CarListPage() {
               <hr className="w-full " />
             </div>
             {/* layer two  */}
-            <div className="w-full">
+            <div className="lg:w-full px-8">
               {listDisplay ? (
                 <div>{listRender(12)}</div>
               ) : (
