@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { FaLocationDot, FaShareNodes } from "react-icons/fa6";
-import { IoMdArrowDropright } from "react-icons/io";
 import { GiRotaryPhone } from "react-icons/gi";
 import ImageHoverText from "@/app/components/ImageHoverText";
 import LoanCalculator from "@/app/components/LoanCalculator";
